@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2024-09-17 09:57+0800\n"
-"PO-Revision-Date: 2026-01-07 14:58+0800\n"
+"PO-Revision-Date: 2026-02-20 11:17+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -454,3 +454,36 @@ msgstr "percent text"
 
 msgid "SHOW_TEXT"
 msgstr "show text"
+
+msgid "media_get"
+msgstr "Global System Media Transport Controls"
+
+msgid "thumbnail"
+msgstr "thumbnail"
+
+msgid "title"
+msgstr "title"
+
+msgid "title_simple"
+msgstr "simple title"
+
+msgid "artist"
+msgstr "artist"
+
+msgid "album"
+msgstr "album"
+
+msgid "start_time"
+msgstr "start time"
+
+msgid "position"
+msgstr "position"
+
+msgid "end_time"
+msgstr "end time"
+
+msgid "progress_bar"
+msgstr "progress bar"
+
+msgid "TEMP_TYPE"
+msgstr "Temperature Type"

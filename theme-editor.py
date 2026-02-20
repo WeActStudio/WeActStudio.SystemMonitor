@@ -473,7 +473,7 @@ class theme_editor:
             "", "end", text=self.theme_file
         )
 
-        order = ["author", "display", "static_images", "static_text", "dynamic_images","dynamic_texts", "photo_album","requests_get", "STATS", "PATH"]
+        order = ["author", "display", "static_images", "static_text", "dynamic_images", "dynamic_texts", "photo_album", "requests_get", "media_get", "STATS", "PATH"]
         sorted_d = dict_tools.sort_dict_by_order(config.THEME_DATA_EDIT, order)
         import copy
 
@@ -673,7 +673,7 @@ class theme_editor:
                 "", "end", text=self.theme_file
             )
             # 重新排序
-            order = ["author", "display", "static_images", "static_text", "dynamic_images","dynamic_texts", "photo_album", "requests_get", "STATS", "PATH"]
+            order = ["author", "display", "static_images", "static_text", "dynamic_images", "dynamic_texts", "photo_album", "requests_get", "media_get", "STATS", "PATH"]
 
             if item_key in order and len(selection_s) == 1:
                 print('reorder theme data edit')
@@ -843,7 +843,7 @@ class theme_editor:
         label_top.grid(row=0, column=0, columnspan=10, sticky="w", padx=5, pady=5)
 
         if text_show != None:
-            label_tips = ttk.Label(self.editor, text="")
+            label_tips = ttk.Label(self.editor, text="",foreground="#00a6ff")
             label_tips["text"] = text_show
             label_tips.grid(row=1, column=0, columnspan=10, sticky="w", padx=10, pady=5)
 
@@ -1306,6 +1306,7 @@ class theme_editor:
             import library.dynamic_texts as dynamic_texts
             import library.photo_album as photo_album
             import library.requests_get as requests_get
+            import library.media_get as media_get
 
             if need_refresh == True:
                 error_text = "initialize_display"
@@ -1383,11 +1384,17 @@ class theme_editor:
                     error_text = "Input monitor stats"
                     stats.InputMonitor.stats(True)
 
+                error_text = "dynamic_images"
                 dynamic_images.dynamic_images.init()
+                error_text = "dynamic_texts"
                 dynamic_texts.dynamic_texts.init()
+                error_text = "photo_album"
                 photo_album.photo_album.init()
+                error_text = "requests_get"
                 if config.THEME_DATA['requests_get'].get("SHOW", False) == True:
                     requests_get.requests_get.init()
+                error_text = "media_get"
+                media_get.media_get.init()
 
             need_refresh_img = False
             
@@ -1402,6 +1409,12 @@ class theme_editor:
             if config.THEME_DATA['requests_get'].get("SHOW", False) == True:
                 if requests_get.requests_get.get(True):
                     need_refresh_img = True
+            
+            if config.THEME_DATA.get("media_get", None):
+                if self.main_refresh_tick % 10 == 0:
+                    error_text = "media_get"
+                    if media_get.media_get.handle(True):
+                        need_refresh_img = True 
             
             if need_refresh_img == True:
                 self.display_image = ImageTk.PhotoImage(display.lcd.screen_image)
@@ -1423,6 +1436,7 @@ class theme_editor:
         else:
             self.close_theme_frame = tkinter.Toplevel(self.main)
             self.close_theme_frame.title(_("Confirm"))
+            self.close_theme_frame.withdraw()
 
             def on_close_theme_frame_closing():
                 self.close_theme_frame.grab_release()
@@ -1488,6 +1502,11 @@ class theme_editor:
             x = main_window_x + (main_window_width // 2) - (width // 2)
             y = main_window_y + (main_window_height // 2) - (height // 2)
             self.close_theme_frame.geometry(f"{width}x{height}+{x}+{y}")
+            self.close_theme_frame.deiconify()
+
+            self.close_theme_frame.focus_force()
+
+            utils.apply_theme_to_titlebar(self.close_theme_frame,self.theme_is_dark)
 
     def draw_zone(self, x0, y0, x1, y1):
         x_err = (self.image_width - display.lcd.get_width())/2

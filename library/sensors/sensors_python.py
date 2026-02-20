@@ -135,7 +135,7 @@ class Cpu(sensors.Cpu):
             return math.nan, math.nan, math.nan
 
     @staticmethod
-    def temperature() -> float:
+    def temperature(type: str = None) -> float:
         cpu_temp = math.nan
         try:
             sensors_temps = psutil.sensors_temperatures()
@@ -579,11 +579,9 @@ class Volume(sensors.Volume):
     @staticmethod
     def volume_percent() -> int:
         if platform.system() == 'Windows':
-            from comtypes import CLSCTX_ALL
-            from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+            from pycaw.pycaw import AudioUtilities
             devices = AudioUtilities.GetSpeakers()
-            interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
-            volume = interface.QueryInterface(IAudioEndpointVolume)
+            volume = devices.EndpointVolume
             vl = volume.GetMasterVolumeLevelScalar() * 100
             return round(vl)
         else:

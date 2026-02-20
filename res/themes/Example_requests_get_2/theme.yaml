@@ -42,7 +42,7 @@ requests_get:
     SHOW: true
     INTERVAL_100mS: 600
     GET_TYPE: image
-    URL: https://v2.api-m.com/api/wallpaper?return=302
+    URL: https://v2.xxapi.cn/api/wallpaper?return=302
     ARGS1: ''
     ARGS2: ''
     RETURN_SETTING: ''

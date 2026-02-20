@@ -82,8 +82,9 @@ class dynamic_texts:
                     font=config.get_font_path(cls.theme_data[text_dict].get("FONT", None)),
                     font_size=cls.theme_data[text_dict].get("FONT_SIZE", 10),
                     font_color=cls.theme_data[text_dict].get("FONT_COLOR", (0, 0, 0)),
-                    align=cls.theme_data[text_dict].get("ALIGN", "left"),
+                    align=cls.theme_data[text_dict].get("ALIGN", "justify"),
                     anchor=cls.theme_data[text_dict].get("ANCHOR", "lt"),
+                    rotation=cls.theme_data[text_dict].get("ROTATION", 0),
                 )
                 
                 refresh = True

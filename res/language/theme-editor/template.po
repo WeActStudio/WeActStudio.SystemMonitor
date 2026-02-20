@@ -441,3 +441,36 @@ msgstr ""
 
 msgid "SHOW_TEXT"
 msgstr ""
+
+msgid "media_get"
+msgstr ""
+
+msgid "thumbnail"
+msgstr ""
+
+msgid "title"
+msgstr ""
+
+msgid "title_simple"
+msgstr ""
+
+msgid "artist"
+msgstr ""
+
+msgid "album"
+msgstr ""
+
+msgid "start_time"
+msgstr ""
+
+msgid "position"
+msgstr ""
+
+msgid "end_time"
+msgstr ""
+
+msgid "progress_bar"
+msgstr ""
+
+msgid "TEMP_TYPE"
+msgstr ""

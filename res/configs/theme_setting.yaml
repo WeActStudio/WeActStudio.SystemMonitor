@@ -46,3 +46,7 @@ BAR_DECORATION:
 GET_TYPE:
   image: image
   text: text
+
+TEMP_TYPE:
+  Core: Core
+  Package: Package

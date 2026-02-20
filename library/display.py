@@ -177,7 +177,7 @@ class Display:
                     font_color=config.THEME_DATA['static_text'][text].get("FONT_COLOR", (0, 0, 0)),
                     background_color=config.THEME_DATA['static_text'][text].get("BACKGROUND_COLOR", (255, 255, 255)),
                     background_image=config.get_theme_file_path(config.THEME_DATA['static_text'][text].get("BACKGROUND_IMAGE", None)),
-                    align=config.THEME_DATA['static_text'][text].get("ALIGN", "left"),
+                    align=config.THEME_DATA['static_text'][text].get("ALIGN", "justify"),
                     anchor=config.THEME_DATA['static_text'][text].get("ANCHOR", "lt"),
                     rotation=config.THEME_DATA['static_text'][text].get("ROTATION", 0),
                 )

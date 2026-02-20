@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2024-09-11 21:20+0800\n"
-"PO-Revision-Date: 2025-08-15 10:34+0800\n"
+"PO-Revision-Date: 2026-02-20 11:16+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh\n"
@@ -128,7 +128,8 @@ msgid "If you want to add more image,\n"
 msgstr "画像を追加したい場合は、\n"
 "IMAGE_EXAMPLEの名前を変更することから始めてください"
 
-msgid "If you want to add more requests_get,\nchange the get_xx name first"
+msgid "If you want to add more requests_get,\n"
+"change the get_xx name first"
 msgstr "request _getを追加したい場合は、\n"
 "get_xxの名前を変更してください"
 
@@ -155,4 +156,37 @@ msgstr "アンドゥ"
 
 msgid "Redo"
 msgstr "リドゥ"
+
+msgid "media_get"
+msgstr "GSMTC 現在再生中のコンテンツ取得"
+
+msgid "thumbnail"
+msgstr "サムネイル"
+
+msgid "title"
+msgstr "タイトル"
+
+msgid "title_simple"
+msgstr "簡単なタイトル"
+
+msgid "artist"
+msgstr "アーティスト"
+
+msgid "album"
+msgstr "アルバム"
+
+msgid "start_time"
+msgstr "開始時間"
+
+msgid "position"
+msgstr "位置"
+
+msgid "end_time"
+msgstr "終了時刻"
+
+msgid "progress_bar"
+msgstr "プログレスバー"
+
+msgid "TEMP_TYPE"
+msgstr "温度タイプ"
 

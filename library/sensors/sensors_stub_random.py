@@ -43,7 +43,7 @@ class Cpu(sensors.Cpu):
         return random.uniform(0, 100), random.uniform(0, 100), random.uniform(0, 100)
 
     @staticmethod
-    def temperature() -> float:
+    def temperature(type: str = None) -> float:
         return random.uniform(30, 90)
 
     @staticmethod

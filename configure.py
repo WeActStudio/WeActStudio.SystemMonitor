@@ -229,26 +229,6 @@ def get_fans():
     )  # Add manual entry on top if auto-detection succeeded
     return fan_list
 
-
-def apply_theme_to_titlebar(root,is_dark):
-    if platform.system() != "Windows":
-        return
-    
-    import pywinstyles, sys
-    version = sys.getwindowsversion()
-
-    if version.major == 10 and version.build >= 22000:
-        # Set the title bar color to the background color on Windows 11 for better appearance
-        if is_dark:
-            pywinstyles.change_header_color(root, "#1c1c1c")
-    elif version.major == 10:
-        if is_dark:
-            pywinstyles.apply_style(root, "dark")
-
-            # A hacky way to update the title bar's color on Windows 10 (it doesn't update instantly like on Windows 11)
-            root.wm_attributes("-alpha", 0.99)
-            root.wm_attributes("-alpha", 1)
-
 class ConfigWindow:
     def __init__(self):
 
@@ -274,7 +254,7 @@ class ConfigWindow:
             self.window.tk.call("source", Path(__file__).parent / "res" / "tk_themes" / "sv_ttk" / "theme" / "light.tcl")
             style.theme_use("sun-valley-light")
 
-        apply_theme_to_titlebar(self.window,self.theme_is_dark)
+        utils.apply_theme_to_titlebar(self.window,self.theme_is_dark)
         self.window.update()
 
         self.entry_label_text = {}
@@ -555,7 +535,7 @@ class ConfigWindow:
         self.window.resizable(False, False)
         self.window.protocol("WM_DELETE_WINDOW", self.on_closing)
         
-        apply_theme_to_titlebar(self.window,self.theme_is_dark)
+        utils.apply_theme_to_titlebar(self.window,self.theme_is_dark)
 
         # Center the window on the screen
         # self.window.withdraw()
@@ -660,7 +640,7 @@ class ConfigWindow:
         ok_button.pack(side=tkinter.RIGHT, padx=5, pady=5)
         ok_button['state'] = self.save_run_btn['state']
 
-        apply_theme_to_titlebar(self.closing_confirm_frame,self.theme_is_dark)
+        utils.apply_theme_to_titlebar(self.closing_confirm_frame,self.theme_is_dark)
 
     def display_off(self):
         print('display.turn_off')
@@ -1192,7 +1172,7 @@ class ConfigWindow:
         self.new_theme_editor.deiconify()
         self.new_theme_editor.focus_force()
 
-        apply_theme_to_titlebar(self.new_theme_editor,self.theme_is_dark)
+        utils.apply_theme_to_titlebar(self.new_theme_editor,self.theme_is_dark)
 
     def on_new_theme_editor_closing(self):
         self.new_theme_editor.grab_release()
@@ -1375,7 +1355,7 @@ class ConfigWindow:
 
         self.delete_theme_frame.focus_force()
 
-        apply_theme_to_titlebar(self.delete_theme_frame,self.theme_is_dark)
+        utils.apply_theme_to_titlebar(self.delete_theme_frame,self.theme_is_dark)
 
         def on_delete_theme_frame_ok():
             current_directory = Path(self.themes_dir_path)
@@ -1472,7 +1452,7 @@ class ConfigWindow:
         self.copy_theme_editor_entry_change()
         self.copy_theme_editor.focus_force()
 
-        apply_theme_to_titlebar(self.copy_theme_editor,self.theme_is_dark)
+        utils.apply_theme_to_titlebar(self.copy_theme_editor,self.theme_is_dark)
 
     def on_copy_theme_editor_closing(self):
         self.copy_theme_editor.grab_release()
@@ -1798,7 +1778,7 @@ class PingWeatherConfigWindow:
         self.window.focus_force()
         self.window.grab_set()
 
-        apply_theme_to_titlebar(self.window,self.main_window.theme_is_dark)
+        utils.apply_theme_to_titlebar(self.window,self.main_window.theme_is_dark)
 
     def on_closing(self):
         self.window.grab_release()
@@ -1939,7 +1919,7 @@ class WorkspaceSettingsWindow:
         self.window.focus_force()
         self.window.grab_set()
 
-        apply_theme_to_titlebar(self.window,self.main_window.theme_is_dark)
+        utils.apply_theme_to_titlebar(self.window,self.main_window.theme_is_dark)
     
     def on_closing(self):
         self.window.grab_release()

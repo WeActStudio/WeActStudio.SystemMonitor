@@ -123,7 +123,7 @@ class requests_get:
                             font_color=theme_value.get("FONT_COLOR", (255, 255, 255)),
                             background_color=theme_value.get("BACKGROUND_COLOR", (0, 0, 0)),
                             background_image=config.get_theme_file_path(theme_value.get("BACKGROUND_IMAGE", None)),
-                            align=theme_value.get("ALIGN", "left"),
+                            align=theme_value.get("ALIGN", "justify"),
                             anchor=theme_value.get("ANCHOR", "lt"),
                             rotation=theme_value.get("ROTATION", 0),
                         )

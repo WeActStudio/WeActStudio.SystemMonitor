@@ -46,7 +46,7 @@ class Cpu(ABC):
 
     @staticmethod
     @abstractmethod
-    def temperature() -> float:
+    def temperature(type: str = None) -> float:
         pass
 
     @staticmethod

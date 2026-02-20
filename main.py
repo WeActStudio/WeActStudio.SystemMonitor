@@ -292,6 +292,9 @@ def scheduler_init():
     scheduler.requests_get_Init()
     scheduler.requests_get_Handler()
     time.sleep(0.15)
+    scheduler.media_get_Init()
+    scheduler.media_get_Handler()
+    time.sleep(0.15)
 
 if platform.system() == "Windows":
     def on_win32_ctrl_event(event):

@@ -154,6 +154,7 @@ STATS:
         BACKGROUND_IMAGE: background.png
         ALIGN: right  # left / center / right
         ANCHOR: rt   # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+      TEMP_TYPE: Core
   MEMORY:
     # In seconds. Longer intervals cause this to refresh more slowly.
     # Setting to lower values will display near real time data,

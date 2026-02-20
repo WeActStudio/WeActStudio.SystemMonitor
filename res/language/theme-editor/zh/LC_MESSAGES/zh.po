@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2024-09-11 21:20+0800\n"
-"PO-Revision-Date: 2026-01-07 14:57+0800\n"
+"PO-Revision-Date: 2026-02-20 11:16+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh\n"
@@ -93,7 +93,7 @@ msgstr "否"
 
 #: .\theme-editor.py:1248
 msgid "OK"
-msgstr "好"
+msgstr "是"
 
 #: .\theme-editor.py:1285
 msgid "Drawing zone from [{},{}] to [{},{}]"
@@ -462,4 +462,37 @@ msgstr "百分比文字"
 
 msgid "SHOW_TEXT"
 msgstr "显示文本"
+
+msgid "media_get"
+msgstr "GSMTC 当前播放内容获取"
+
+msgid "thumbnail"
+msgstr "缩略图"
+
+msgid "title"
+msgstr "名称"
+
+msgid "title_simple"
+msgstr "简易名称"
+
+msgid "artist"
+msgstr "艺术家"
+
+msgid "album"
+msgstr "专辑"
+
+msgid "start_time"
+msgstr "开始时间"
+
+msgid "position"
+msgstr "位置"
+
+msgid "end_time"
+msgstr "结束时间"
+
+msgid "progress_bar"
+msgstr "进度条"
+
+msgid "TEMP_TYPE"
+msgstr "温度类型"
 

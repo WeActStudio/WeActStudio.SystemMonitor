@@ -31,6 +31,7 @@ import library.dynamic_images as dynamic_images
 import library.dynamic_texts as dynamic_texts
 import library.photo_album as photo_album
 import library.requests_get as requests_get
+import library.media_get as media_get
 
 STOPPING = False
 
@@ -253,6 +254,14 @@ def requests_get_Handler():
 
 def requests_get_Init():
     requests_get.requests_get.init()
+
+@async_job("media_get_Handler")
+@schedule(timedelta(seconds=(1 if config.THEME_DATA.get("media_get", None) is not None else 0)).total_seconds())
+def media_get_Handler():
+    media_get.media_get.handle()
+
+def media_get_Init():
+    media_get.media_get.init()
 
 @async_job("Queue_Handler")
 @schedule(timedelta(milliseconds=1).total_seconds())

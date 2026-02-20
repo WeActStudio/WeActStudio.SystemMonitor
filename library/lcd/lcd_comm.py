@@ -261,7 +261,7 @@ class LcdComm(ABC):
             font_color: Color = (0, 0, 0),
             background_color: Color = (255, 255, 255),
             background_image: Optional[str] = None,
-            align: str = 'left',
+            align: str = 'justify',
             anchor: str = 'la',
             rotation: int = 0
     ):
@@ -293,7 +293,10 @@ class LcdComm(ABC):
             text_image = self.open_image(background_image)
 
         # Get text bounding box
-        ttfont = self.open_font(font, font_size)
+        try:
+            ttfont = self.open_font(font, font_size)
+        except:
+            raise Exception(f"Font {font} open failed")
         d = ImageDraw.Draw(text_image)
 
         # Split text into lines based on width
@@ -315,21 +318,21 @@ class LcdComm(ABC):
             width_now = x1 - x0
             
             # ensure current line does not exceed width limit
-            width_limit = width if width != 0 else screen_width
+            width_limit = width if width != 0 else (screen_width-x0)
             # check if current line exceeds width limit or screen width
             if x0 >= 0 and width_now <= width_limit and x1 <= screen_width and char != '\n':
                 current_line = test_line
             else:
                 if current_line:
                     # record current line text box information
-                    x0, y0, x1, y1 = d.textbbox((x, current_y), current_line, font=ttfont, align=align, anchor=anchor_set)
+                    x0, y0, x1, y1 = d.textbbox((x, current_y), current_line, font=ttfont, align=align, anchor=anchor)
                     if anchor_set is not None:
                         height_now = y1 - y0
                         height_error = (font_height-height_now)/2
                         if anchor_set.endswith('m'):
                             y0 = y0 - height_error
                             y1 = y1 + height_error
-                        elif anchor_set.endswith('b'):
+                        elif anchor_set.endswith('b') or anchor_set.endswith('d') or anchor_set.endswith('s'):
                             y0 = y0 - (font_height-height_now)
                         else:
                             y1 = y1 + (font_height-height_now)
@@ -347,7 +350,7 @@ class LcdComm(ABC):
 
         # handle last line
         if current_line:
-            x0, y0, x1, y1 = d.textbbox((x, current_y), current_line, font=ttfont, align=align, anchor=anchor_set)
+            x0, y0, x1, y1 = d.textbbox((x, current_y), current_line, font=ttfont, align=align, anchor=anchor)
             # print(f'x0: {x0} y0: {y0} x1: {x1} y1: {y1}')
             if anchor_set is not None:
                 height_now = y1 - y0
@@ -355,7 +358,7 @@ class LcdComm(ABC):
                 if anchor_set.endswith('m'):
                     y0 = y0 - height_error
                     y1 = y1 + height_error
-                elif anchor_set.endswith('b'):
+                elif anchor_set.endswith('b') or anchor_set.endswith('d') or anchor_set.endswith('s'):
                     y0 = y0 - (font_height-height_now)
                 else:
                     y1 = y1 + (font_height-height_now)
@@ -380,43 +383,62 @@ class LcdComm(ABC):
         # calculate offset to center text
         offset_x = 0
         offset_y = 0
+
+        error_left = 0
+        error_right = 0
+        error_top = 0
+        error_bottom = 0
+
         if anchor is not None:
             if width > text_width:
                 if anchor.startswith('m'):
-                    offset_x = width // 2
-                    if anchor_set is not None:
-                        offset_x = 0 
-                elif anchor.startswith('r'):
-                    offset_x = width
-                    if anchor_set is not None:
-                        offset_x = 0
+                    error_left = (width - text_width) // 2
+                    error_right = width - text_width - error_left
+                elif anchor.startswith('l'):
+                    error_left = 0
+                    error_right = width - text_width
+                else:
+                    error_left = width - text_width
+                    error_right = 0
 
             if height > font_height:
                 if anchor.endswith('m'):
-                    offset_y = height // 2
-                    if anchor_set is not None:
-                        offset_y = offset_y - font_height/2
-                elif anchor.endswith('b'):
-                    offset_y = height
-                    if anchor_set is not None:
-                        offset_y = offset_y - font_height
+                    error_top = (height - text_height) // 2
+                    error_bottom = height - text_height - error_top
+                elif anchor.endswith('b') or anchor.endswith('d') or anchor.endswith('s'):
+                    error_top = height - text_height
+                    error_bottom = 0
+                else:
+                    error_top = 0
+                    error_bottom = height - text_height
 
         # calculate new display area and offset
-        new_left = left - offset_x
-        new_top = top - offset_y
-        new_right = new_left + width
-        new_bottom = new_top + height
+        new_left = left - error_left
+        new_top = top - error_top
+        new_right = right + error_right
+        new_bottom = bottom + error_bottom
         
         # print(f'new_left: {new_left} new_top: {new_top} new_right: {new_right} new_bottom: {new_bottom}')
 
         if anchor is not None:
-            if align == 'center':
-                offset_x = offset_x - (width - text_width) // 2
-            elif align == 'right':
-                offset_x = offset_x - (width - text_width)
-            
-            if height > text_height:
-                offset_y = offset_y - (new_bottom - new_top - text_height) // 2
+            if anchor.startswith('l'):
+                if align == 'center':
+                    offset_x = offset_x - (width - text_width) // 2
+                elif align == 'right':
+                    offset_x = offset_x - (width - text_width)
+            elif anchor.startswith('r'):
+                if align == 'center':
+                    offset_x = offset_x + (width - text_width) // 2
+                elif align == 'left':
+                    offset_x = offset_x + (width - text_width)
+            elif anchor.startswith('m'):
+                if align == 'left':
+                    offset_x = offset_x + (width - text_width) // 2
+                elif align == 'right':
+                    offset_x = offset_x - (width - text_width) // 2
+                
+            # if height > text_height:
+            #     offset_y = offset_y - (new_bottom - new_top - text_height) // 2
 
         if rotation != 0:
             # create a temporary image to draw text
@@ -448,11 +470,138 @@ class LcdComm(ABC):
             # draw text on image
             for line_idx, line in enumerate(lines):
                 line_y = y + line_idx * font_height - offset_y
-                d.text((x-offset_x, line_y), line, fill=font_color, font=ttfont, align=align, anchor=anchor_set)
+                d.text((x-offset_x, line_y), line, fill=font_color, font=ttfont, align=align, anchor=anchor)
 
         # crop text image to get actual text area
         text_image = text_image.crop((new_left, new_top, new_right, new_bottom))
-        self.DisplayPILImage(text_image, int(new_left), int(new_top))
+        try:
+            self.DisplayPILImage(text_image, int(new_left), int(new_top))
+        except:
+            raise Exception(f"Text display failed, x: {new_left}, y: {new_top}, width: {text_image.width}, height: {text_image.height}")
+
+    def DisplayText2(
+            self,
+            text: str,
+            x: int = 0,
+            y: int = 0,
+            width: int = 0,
+            height: int = 0,
+            font: str = str(Path(__file__).parent.parent.parent / "res" / "fonts" / "roboto-mono" / "RobotoMono-Regular.ttf"),
+            font_size: int = 20,
+            font_color: Color = (0, 0, 0),
+            background_color: Color = (255, 255, 255),
+            background_image: Optional[str] = None,
+            anchor: str = 'la',
+            width_last: int = 0
+    ):
+        # Convert text to bitmap using PIL and display it
+        # Provide the background image path to display text with transparent background
+
+        font_color = parse_color(font_color)
+
+        assert x <= self.get_width(), 'Text X coordinate ' + str(x) + ' must be <= display width ' + str(
+            self.get_width())
+        assert y <= self.get_height(), 'Text Y coordinate ' + str(y) + ' must be <= display height ' + str(
+            self.get_height())
+        assert len(text) > 0, 'Text must not be empty'
+        assert font_size > 0, "Font size must be > 0"
+
+        anchor_set = None if '\n' in text else anchor
+
+        text_image = None
+        if background_image is None:
+            background_color = parse_color(background_color)
+            # A text bitmap is created with max width/height by default : text with solid background
+            text_image = Image.new(
+                'RGB',
+                (self.get_width(), self.get_height()),
+                background_color
+            )
+        else:
+            # The text bitmap is created from provided background image : text with transparent background
+            text_image = self.open_image(background_image)
+
+        # Get text bounding box
+        try:
+            ttfont = self.open_font(font, font_size)
+        except:
+            raise Exception(f"Font {font} open failed")
+        d = ImageDraw.Draw(text_image)
+
+        screen_width = self.get_width()
+        current_line = ''
+        display_char_size = 0
+        display_char_width = 0
+        display_char_height = 0
+        new_left = 0
+        new_top = 0
+        new_right = 0
+        new_bottom = 0
+        for char in text:
+            test_line = current_line + char
+            x0, y0, x1, y1 = d.textbbox((x, y), test_line, font=ttfont, anchor=anchor_set)
+            width_now = x1 - x0
+            
+            # ensure current line does not exceed width limit
+            width_limit = width if width != 0 else (screen_width-x0)
+            # check if current line exceeds width limit or screen width
+            if x0 >= 0 and width_now <= width_limit and x1 <= screen_width and char != '\n':
+                current_line = test_line
+                display_char_width = width_now
+                new_left = x0
+                new_top = y0
+                new_right = x1
+                new_bottom = y1
+            else:
+                break
+        display_char_width = new_right - new_left
+        display_char_height = new_bottom - new_top
+        display_char_size = len(current_line)
+        d.text((x, y), current_line, fill=font_color, font=ttfont, anchor=anchor_set)
+        
+        if width == 0:
+            if width_last > display_char_width:
+                width = width_last
+                
+        if width:
+            if anchor_set.startswith('m'):
+                error_left = (width - display_char_width) // 2
+                error_right = width - display_char_width - error_left
+            elif anchor_set.startswith('l'):
+                error_left = 0
+                error_right = width - display_char_width
+            else:
+                error_left = width - display_char_width
+                error_right = 0
+            new_left -= error_left
+            new_right += error_right
+
+        if height < ttfont.size:
+            height = ttfont.size
+        if anchor_set.endswith('m'):
+            error_top = (height - display_char_height) // 2
+            error_bottom = height - display_char_height - error_top
+        elif anchor_set.endswith('b') or anchor_set.endswith('d') or anchor_set.endswith('s'):
+            error_top = height - display_char_height
+            error_bottom = 0
+        else:
+            error_top = 0
+            error_bottom = height - display_char_height
+        new_top -= error_top
+        new_bottom += error_bottom
+
+        # crop text image to get actual text area
+        text_image = text_image.crop((new_left, new_top, new_right, new_bottom))
+        try:
+            self.DisplayPILImage(text_image, int(new_left), int(new_top))
+        except:
+            display_char_size = 0
+            display_char_width = 0
+            display_char_height = 0
+            raise Exception(f"Text display failed, x: {new_left}, y: {new_top}, width: {text_image.width}, height: {text_image.height}")
+
+        return display_char_size, display_char_width
+
 
     def DisplayProgressBar(self, x: int, y: int, width: int, height: int, min_value: int = 0, max_value: int = 100,
                            value: int = 50,
@@ -514,7 +663,8 @@ class LcdComm(ABC):
                          axis_font: str = str(Path(__file__).parent.parent.parent / "res" / "fonts" / "roboto" / "Roboto-Black.ttf"),
                          axis_font_size: int = 10,
                          background_color: Color = (255, 255, 255),
-                         background_image: Optional[str] = None):
+                         background_image: Optional[str] = None,
+                         axis_minmax_format: str = "{:0.0f}"):
         # Generate a plot graph and display it
         # Provide the background image path to display plot graph with transparent background
 
@@ -522,10 +672,10 @@ class LcdComm(ABC):
         axis_color = parse_color(axis_color)
         background_color = parse_color(background_color)
 
-        assert x <= self.get_width(), 'Progress bar X coordinate must be <= display width'
-        assert y <= self.get_height(), 'Progress bar Y coordinate must be <= display height'
-        assert x + width <= self.get_width(), 'Progress bar width exceeds display width'
-        assert y + height <= self.get_height(), 'Progress bar height exceeds display height'
+        assert x <= self.get_width(), 'Line graph X coordinate must be <= display width'
+        assert y <= self.get_height(), 'Line graph Y coordinate must be <= display height'
+        assert x + width <= self.get_width(), 'Line graph width exceeds display width'
+        assert y + height <= self.get_height(), 'Line graph height exceeds display height'
 
         if background_image is None:
             # A bitmap is created with solid background
@@ -554,7 +704,7 @@ class LcdComm(ABC):
 
         step = width / len(values)
         # pre compute yScale multiplier value
-        yScale = height / (max_value - min_value)
+        yScale = height / (max_value - min_value) if (max_value - min_value) != 0 else 0
 
         plotsX = []
         plotsY = []
@@ -585,13 +735,13 @@ class LcdComm(ABC):
 
             # Draw Legend
             draw.line([0, 0, 1, 0], fill=axis_color)
-            text = f"{int(max_value)}"
+            text = axis_minmax_format.format(max_value)
             ttfont = self.open_font(axis_font, axis_font_size)
             _, top, right, bottom = ttfont.getbbox(text)
             draw.text((2, 0 - top), text,
                       font=ttfont, fill=axis_color)
 
-            text = f"{int(min_value)}"
+            text = axis_minmax_format.format(min_value)
             _, top, right, bottom = ttfont.getbbox(text)
             draw.text((width - 1 - right, height - 2 - bottom), text,
                       font=ttfont, fill=axis_color)

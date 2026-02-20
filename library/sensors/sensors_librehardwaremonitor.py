@@ -229,29 +229,35 @@ class Cpu(sensors.Cpu):
         return psutil.getloadavg()
 
     @staticmethod
-    def temperature() -> float:
+    def temperature(type: str = None) -> float:
         cpu = get_hw_and_update(Hardware.HardwareType.Cpu)
         try:
-            # By default, the average temperature of all CPU cores will be used
-            for sensor in cpu.Sensors:
-                if sensor.SensorType == Hardware.SensorType.Temperature and str(sensor.Name).startswith(
-                        "Core Average") and sensor.Value is not None:
-                    return float(sensor.Value)
-            # If not available, the max core temperature will be used
-            for sensor in cpu.Sensors:
-                if sensor.SensorType == Hardware.SensorType.Temperature and str(sensor.Name).startswith(
-                        "Core Max") and sensor.Value is not None:
-                    return float(sensor.Value)
-            # If not available, the CPU Package temperature (usually same as max core temperature) will be used
-            for sensor in cpu.Sensors:
-                if sensor.SensorType == Hardware.SensorType.Temperature and str(sensor.Name).startswith(
-                        "CPU Package") and sensor.Value is not None:
-                    return float(sensor.Value)
-            # Otherwise any sensor named "Core..." will be used
-            for sensor in cpu.Sensors:
-                if sensor.SensorType == Hardware.SensorType.Temperature and str(sensor.Name).startswith(
-                        "Core") and sensor.Value is not None:
-                    return float(sensor.Value)
+            if type == "Core":
+                # By default, the average temperature of all CPU cores will be used
+                for sensor in cpu.Sensors:
+                    if sensor.SensorType == Hardware.SensorType.Temperature and str(sensor.Name).startswith(
+                            "Core Average") and sensor.Value is not None:
+                        return float(sensor.Value)
+                # If not available, the max core temperature will be used
+                for sensor in cpu.Sensors:
+                    if sensor.SensorType == Hardware.SensorType.Temperature and str(sensor.Name).startswith(
+                            "Core Max") and sensor.Value is not None:
+                        return float(sensor.Value)
+                # Otherwise any sensor named "Core..." will be used
+                for sensor in cpu.Sensors:
+                    if sensor.SensorType == Hardware.SensorType.Temperature and str(sensor.Name).startswith(
+                            "Core") and sensor.Value is not None:
+                        return float(sensor.Value)
+            else:
+                # If not available, the CPU Package temperature (usually same as max core temperature) will be used
+                for sensor in cpu.Sensors:
+                    if sensor.SensorType == Hardware.SensorType.Temperature and str(sensor.Name).startswith(
+                            "CPU Package") and sensor.Value is not None:
+                        return float(sensor.Value)
+                for sensor in cpu.Sensors:
+                    if sensor.SensorType == Hardware.SensorType.Temperature and str(sensor.Name).startswith(
+                            "Package") and sensor.Value is not None:
+                        return float(sensor.Value)
         except:
             pass
 
@@ -679,10 +685,8 @@ class Net(sensors.Net):
 class Volume(sensors.Volume):
     @staticmethod
     def volume_percent() -> int:
-        from comtypes import CLSCTX_ALL
-        from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+        from pycaw.pycaw import AudioUtilities
         devices = AudioUtilities.GetSpeakers()
-        interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
-        volume = interface.QueryInterface(IAudioEndpointVolume)
+        volume = devices.EndpointVolume
         vl = volume.GetMasterVolumeLevelScalar() * 100
         return round(vl)
