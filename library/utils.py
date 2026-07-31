@@ -260,7 +260,7 @@ class run:
     @classmethod
     def get_executable_name(cls):
         if sys.platform == 'win32':
-            exec_name = f"{cls.python_name}.exe"
+            exec_name = f"{cls.python_name}_w.exe"
         else:
             exec_name = cls.python_name
         python_cmd = cls.grandparent_dir / "Python" / exec_name
