@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-09-14 23:32+0800\n"
+"PO-Revision-Date: 2025-08-15 10:34+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp936\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.5\n"
+
+#: .\configure.py:92
+msgid "landscape"
+msgstr "横向"
+
+#: .\configure.py:92
+msgid "portrait"
+msgstr "纵向"
+
+#: .\configure.py:114
+msgid "Automatic"
+msgstr "自动"
+
+#: .\configure.py:117
+msgid "Fake random data"
+msgstr "假的随机数据"
+
+#: .\configure.py:118
+msgid "Fake static data"
+msgstr "假的静态数据"
+
+#: .\configure.py:120
+msgid "Classic"
+msgstr "经典"
+
+#: .\configure.py:120
+msgid "Reverse"
+msgstr "反向"
+
+#: .\configure.py:155
+msgid "Automatic detection"
+msgstr "自动检测"
+
+#: .\configure.py:198
+msgid "WeAct Studio System Monitor Configuration"
+msgstr "WeAct Studio 副屏配置"
+
+#: .\configure.py:217
+msgid "Display configuration"
+msgstr "显示配置"
+
+#: .\configure.py:221
+msgid "Screen model"
+msgstr "屏幕型号"
+
+#: .\configure.py:231
+msgid "Screen size"
+msgstr "屏幕大小"
+
+#: .\configure.py:240
+msgid "COM port"
+msgstr "串口号"
+
+#: .\configure.py:247
+msgid "Orientation"
+msgstr "显示方向"
+
+#: .\configure.py:255
+msgid "Brightness"
+msgstr "亮度"
+
+#: .\configure.py:275
+msgid "Theme Preview, Auto Save"
+msgstr "主题预览，自动保存"
+
+#: .\configure.py:280
+msgid "Other Config"
+msgstr "其他配置"
+
+#: .\configure.py:287
+msgid "System Monitor Configuration"
+msgstr "系统监视器配置"
+
+#: .\configure.py:291
+msgid "Theme"
+msgstr "主题"
+
+#: .\configure.py:297
+msgid "Refresh"
+msgstr "刷新"
+
+#: .\configure.py:301
+msgid "Hardware monitoring"
+msgstr "硬件监控库"
+
+#: .\configure.py:311
+msgid "Ethernet interface"
+msgstr "以太网接口"
+
+#: .\configure.py:316
+msgid "Wi-Fi interface"
+msgstr "Wi-Fi 接口"
+
+#: .\configure.py:324
+msgid "Restart as admin. or select another Hardware monitoring"
+msgstr "请以admin身份重新启动。或选择其他硬件监控库"
+
+#: .\configure.py:341
+msgid "Edit theme"
+msgstr "编辑主题"
+
+#: .\configure.py:346
+msgid "Save settings"
+msgstr "保存设置"
+
+#: .\configure.py:351
+msgid "Save and run"
+msgstr "保存和运行"
+
+#: .\configure.py:357
+msgid "New theme"
+msgstr "新建主题"
+
+#: .\configure.py:364
+msgid "Delete theme"
+msgstr "删除主题"
+
+#: .\configure.py:389
+msgid "Bootstrap"
+msgstr "开机自启动"
+
+#: .\configure.py:395
+msgid "Enable"
+msgstr "使能"
+
+#: .\configure.py:483
+msgid "Error: "
+msgstr "错误: "
+
+#: .\configure.py:427
+msgid "Close Confirm"
+msgstr "关闭确认"
+
+#: .\configure.py:462 .\configure.py:991
+msgid "NO"
+msgstr "否"
+
+#: .\configure.py:475 .\configure.py:1012
+msgid "OK"
+msgstr "是"
+
+#: .\configure.py:446
+msgid "Do you want to run theme?"
+msgstr "是否需要运行主题?"
+
+#: .\configure.py:483 .\configure.py:491 .\configure.py:547 .\configure.py:555
+#: .\configure.py:871 .\configure.py:875 .\configure.py:906 .\configure.py:969
+#: .\configure.py:988
+msgid "Error"
+msgstr "错误"
+
+#: .\configure.py:491
+msgid "error: COM Port is closed"
+msgstr "错误: 串口已经关闭"
+
+#: .\configure.py:547 .\configure.py:555
+msgid "error: "
+msgstr "错误: "
+
+#: .\configure.py:587
+msgid "Author: "
+msgstr "作者: "
+
+#: .\configure.py:827
+msgid "Theme name already exists."
+msgstr "主题名称已经存在。"
+
+#: .\configure.py:788
+msgid "Cancel"
+msgstr "取消"
+
+#: .\configure.py:832
+msgid "Name"
+msgstr "名称"
+
+#: .\configure.py:836
+msgid "Error input: "
+msgstr "错误输入: "
+
+#: .\configure.py:934
+msgid "Delete theme: "
+msgstr "删除主题: "
+
+#: .\configure.py:969
+msgid "theme editor is running !"
+msgstr "主题编辑器正在运行 !"
+
+#: .\configure.py:988
+msgid "display other config is running !"
+msgstr "其他配置正在运行 !"
+
+msgid "Free Off(3 min)"
+msgstr "空闲息屏(3分钟)"
+
+msgid "Theme dir"
+msgstr "主题目录"
+
+msgid "Copy theme"
+msgstr "复制主题"
+
+msgid "Ping & Weather"
+msgstr "Ping & 天气"
+
+msgid "Ping & Weather Configure"
+msgstr "Ping & 天气 配置"
+
+msgid "Hostname / IP to ping"
+msgstr "需要ping的主机名或IP地址"
+
+msgid "Weather forecast (OpenWeatherMap API)"
+msgstr "天气预报 (OpenWeatherMap API)"
+
+msgid "To display weather forecast on themes that support it, you need an OpenWeatherMap API key.\n"
+"It use \"Current weather data api\": https://openweathermap.org/current .\n"
+"You will get 1,000 API calls per day for free. This program is configured to stay under this threshold (~300 calls/day)."
+msgstr "要在支持它的主题上显示天气预报，你需要一个OpenWeatherMap API密钥。\n"
+"它使用\"Current weather data api\": https://openweathermap.org/current .\n"
+"你每天将免费获得1,000个API调用。这个程序被配置为保持在这个阈值以下（~300个调用/天）。"
+
+msgid "Click here to Create an OpenWeatherMap Account."
+msgstr "点击这里创建一个 OpenWeatherMap 帐户。"
+
+msgid "You can use online services to get your latitude/longitude e.g. latlong.net (click here)"
+msgstr "你可以使用在线服务获取你的经纬度，例如latlong.net（点击这里）"
+
+msgid "Latitude"
+msgstr "纬度"
+
+msgid "Longitude"
+msgstr "经度"
+
+msgid "Get via IP"
+msgstr "通过IP获取"
+
+msgid "Units"
+msgstr "单位"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Test Ping"
+msgstr "测试Ping"
+
+msgid "Test API"
+msgstr "测试API"
+
+msgid "Workspace Settings"
+msgstr "工作区设置"
+
+msgid "Themes Folder:"
+msgstr "主题目录:"
+
+msgid "Select Folder"
+msgstr "选择目录"
+
+msgid "Fonts Folder:"
+msgstr "字体目录:"
+
+msgid "Error: Another instance of the program is already running."
+msgstr "错误：程序的另一个实例已经在运行。"
+
+msgid "Picture Compress"
+msgstr "图片压缩"
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "Paste"
+msgstr "粘贴"
+
+msgid "Cut"
+msgstr "剪切"
+
+msgid "Undo"
+msgstr "撤销"
+
+msgid "Redo"
+msgstr "恢复"
+

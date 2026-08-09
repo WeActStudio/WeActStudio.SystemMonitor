@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-09-13 23:37+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp936\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: .\image_scaler_tool.py:14
+msgid "ImageScaler Tool"
+msgstr ""
+
+#: .\image_scaler_tool.py:21
+msgid "Width:"
+msgstr ""
+
+#: .\image_scaler_tool.py:27
+msgid "Height:"
+msgstr ""
+
+msgid "Frame num:"
+msgstr ""
+
+#: .\image_scaler_tool.py:34
+msgid "Open Pic"
+msgstr ""
+
+#: .\image_scaler_tool.py:38
+msgid "Scale Pic"
+msgstr ""
+
+#: .\image_scaler_tool.py:42
+msgid "Save Pic"
+msgstr ""
+
+#: .\image_scaler_tool.py:85
+msgid "Please specify width or height."
+msgstr ""
+
+#: .\image_scaler_tool.py:85 .\image_scaler_tool.py:128
+msgid "Error"
+msgstr ""
+
+#: .\image_scaler_tool.py:128
+msgid "Please open and scale the image before saving."
+msgstr ""
+
+#: .\image_scaler_tool.py:142
+msgid "Pic has been saved to: "
+msgstr ""
+
+#: .\image_scaler_tool.py:142
+msgid "Successful"
+msgstr ""
+

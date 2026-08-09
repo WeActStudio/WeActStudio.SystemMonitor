@@ -1,0 +1,110 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_SIZE: 320x480
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 85, 85, 85
+
+static_images:
+  background:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 320
+    HEIGHT: 480
+
+static_text:
+  hello:
+    TEXT: Hello World !
+    X: 10
+    Y: 10
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_SIZE: 20
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_IMAGE: background.png
+    ALIGN: left # left / center / right
+    ANCHOR: lt  # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+  hello_weact:
+    TEXT: Hello WeAct Studio !
+    X: 10
+    Y: 50
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_SIZE: 20
+    FONT_COLOR: 255, 255, 255
+    ALIGN: left   # left / center / right
+    ANCHOR: lb  # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+    ROTATION: 0
+    WIDTH: 200
+    HEIGHT: 0
+    BACKGROUND_IMAGE: background.png
+requests_get:
+  SHOW: true
+  get_text_weather:
+    SHOW: true
+    INTERVAL_100mS: 300
+    GET_TYPE: text
+    URL: http://101.35.2.25/api/tianqi/tqybip.php
+    ARGS1: id=88888888,key=88888888
+    ARGS2: ''
+    RETURN_SETTING: '{temperature}℃ {humidity}% {weather1}\n {place}'
+    X: 190
+    Y: 10
+    WIDTH: 120
+    HEIGHT: 40
+    FONT: fusion-pixel\fusion-pixel-12px-monospaced-zh_hans.otf
+    FONT_SIZE: 12
+    FONT_COLOR: 255, 255, 255
+    ALIGN: center
+    ANCHOR: lt
+    ROTATION: 0
+    BACKGROUND_COLOR: 51, 51, 51
+  get_text_today:
+    SHOW: true
+    INTERVAL_100mS: 300
+    GET_TYPE: text
+    URL: http://124.222.204.22/api/xinwen/toutiao.php
+    ARGS1: id=88888888,key=88888888
+    ARGS2: ''
+    X: 10
+    Y: 80
+    WIDTH: 300
+    HEIGHT: 45
+    FONT: fusion-pixel\fusion-pixel-12px-monospaced-zh_hans.otf
+    FONT_SIZE: 12
+    FONT_COLOR: 255, 255, 255
+    ALIGN: center
+    ANCHOR: lm
+    RETURN_SETTING: "{time2}|{data[0]['title']}|{data[1]['title']}|{data[2]['title']}"
+    BACKGROUND_COLOR: 52, 52, 52
+  get_image_random:
+    SHOW: true
+    INTERVAL_100mS: 300
+    GET_TYPE: image
+    URL: https://api.xsot.cn/bing?jump=true
+    ARGS1: ''
+    ARGS2: ''
+    RETURN_SETTING: ''
+    X: 10
+    Y: 180
+    WIDTH: 300
+    HEIGHT: 300
+    ALIGN: center
+    BACKGROUND_IMAGE: background.png
+  get_text_words:
+    SHOW: true
+    INTERVAL_100mS: 300
+    GET_TYPE: text
+    URL: http://124.222.204.22/api/yiyan/api.php
+    ARGS1: id=88888888,key=88888888
+    ARGS2: ''
+    RETURN_SETTING: '{msg}'
+    X: 10
+    Y: 140
+    WIDTH: 300
+    HEIGHT: 60
+    FONT: fusion-pixel\fusion-pixel-12px-monospaced-zh_hans.otf
+    FONT_SIZE: 12
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_COLOR: 71, 71, 71
+    ALIGN: center
+    ANCHOR: lm
+    ROTATION: 0

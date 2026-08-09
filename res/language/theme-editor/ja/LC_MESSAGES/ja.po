@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-09-11 21:20+0800\n"
+"PO-Revision-Date: 2026-02-20 11:16+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp936\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.5\n"
+
+#: .\theme-editor.py:201
+msgid "WeAct Studio System Monitor Theme Editor"
+msgstr "WeAct Studio System Monitor テーマエディタ"
+
+#: .\theme-editor.py:240
+msgid "Click or draw a zone to show coordinates"
+msgstr "クリックするか、座標を示すためにゾーンを描いてください"
+
+#: .\theme-editor.py:250
+msgid "This preview size: "
+msgstr "このプレビューサイズ: "
+
+#: .\theme-editor.py:286
+msgid "Save to file"
+msgstr "ファイルに保存"
+
+#: .\theme-editor.py:291
+msgid "Image Scaler"
+msgstr "画像スケーラー"
+
+msgid "GIF Scaler"
+msgstr "GIFスケーラー"
+
+#: .\theme-editor.py:334
+msgid "Clear log"
+msgstr "クリアログ"
+
+#: .\theme-editor.py:677
+msgid "Waiting selection"
+msgstr "選択待ち"
+
+#: .\theme-editor.py:699
+msgid " Editor"
+msgstr " エディター"
+
+#: .\theme-editor.py:704
+msgid "Please input"
+msgstr "入力してください"
+
+#: .\theme-editor.py:733
+msgid "Please Select"
+msgstr "選択してください"
+
+#: .\theme-editor.py:747 .\theme-editor.py:956
+msgid "Confirm"
+msgstr "確認"
+
+#: .\theme-editor.py:777
+msgid "Select the font in the fonts_dir/"
+msgstr "fonts_dir/からフォントを選択してください"
+
+#: .\theme-editor.py:781
+msgid "Select the picture in "
+msgstr "の中の画像を選択してください "
+
+#: .\theme-editor.py:785
+msgid "Select the color you like"
+msgstr "好きな色を選んでください"
+
+#: .\theme-editor.py:909
+msgid "Name Editor"
+msgstr "名前エディター"
+
+#: .\theme-editor.py:1210
+msgid "Do you need to save it?"
+msgstr "保存する必要がありますか？"
+
+#: .\theme-editor.py:1277
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: .\theme-editor.py:1233
+msgid "NO"
+msgstr "NO"
+
+#: .\theme-editor.py:1248
+msgid "OK"
+msgstr "OK"
+
+#: .\theme-editor.py:1285
+msgid "Drawing zone from [{},{}] to [{},{}]"
+msgstr "[{},{}}]から[{},{}}]へのゾーンを描画する"
+
+#: .\theme-editor.py:1311
+msgid "Zone: X={}, Y={}, width={} height={}"
+msgstr "ゾーン: X={}, Y={}, 幅={} 高さ={}"
+
+msgid "You need to create a new folder called Photos \n"
+"and place your pictures in it."
+msgstr "「Photos」という名前の新しいフォルダーを作成し\n"
+"その中に写真を入れる必要があります。"
+
+msgid "If you want to add more image,\n"
+"change the dynamic_x name first"
+msgstr "画像を追加したい場合は、\n"
+"dynamic_xの名前を変更することから始めてください"
+
+msgid "If you want to add more text,\n"
+"change the dynamic_x name first"
+msgstr "もっとテキストを追加したい場合は、\n"
+"dynamic_xの名前を変更することから始めてください"
+
+msgid "If you want to add more text,\n"
+"change the TEXT_EXAMPLE name first"
+msgstr "もっとテキストを追加したい場合は、\n"
+"TEXT_EXAMPLEの名前を変更することから始めてください"
+
+msgid "If you want to add more image,\n"
+"change the IMAGE_EXAMPLE name first"
+msgstr "画像を追加したい場合は、\n"
+"IMAGE_EXAMPLEの名前を変更することから始めてください"
+
+msgid "If you want to add more requests_get,\n"
+"change the get_xx name first"
+msgstr "request _getを追加したい場合は、\n"
+"get_xxの名前を変更してください"
+
+msgid "Theme Dir"
+msgstr "テーマ目次"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Copy"
+msgstr "コピー"
+
+msgid "Paste"
+msgstr "ペースト"
+
+msgid "Cut"
+msgstr "切る"
+
+msgid "Undo"
+msgstr "アンドゥ"
+
+msgid "Redo"
+msgstr "リドゥ"
+
+msgid "media_get"
+msgstr "GSMTC 現在再生中のコンテンツ取得"
+
+msgid "thumbnail"
+msgstr "サムネイル"
+
+msgid "title"
+msgstr "タイトル"
+
+msgid "title_simple"
+msgstr "簡単なタイトル"
+
+msgid "artist"
+msgstr "アーティスト"
+
+msgid "album"
+msgstr "アルバム"
+
+msgid "start_time"
+msgstr "開始時間"
+
+msgid "position"
+msgstr "位置"
+
+msgid "end_time"
+msgstr "終了時刻"
+
+msgid "progress_bar"
+msgstr "プログレスバー"
+
+msgid "TEMP_TYPE"
+msgstr "温度タイプ"
+

@@ -1,0 +1,498 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-09-11 21:20+0800\n"
+"PO-Revision-Date: 2026-02-20 11:16+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp936\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.5\n"
+
+#: .\theme-editor.py:201
+msgid "WeAct Studio System Monitor Theme Editor"
+msgstr "WeAct Studio 副屏主题编辑器"
+
+#: .\theme-editor.py:240
+msgid "Click or draw a zone to show coordinates"
+msgstr "单击或绘制区域以显示坐标"
+
+#: .\theme-editor.py:250
+msgid "This preview size: "
+msgstr "预览大小: "
+
+#: .\theme-editor.py:286
+msgid "Save to file"
+msgstr "保存"
+
+#: .\theme-editor.py:291
+msgid "Image Scaler"
+msgstr "图像缩放"
+
+msgid "GIF Scaler"
+msgstr "GIF缩放"
+
+#: .\theme-editor.py:334
+msgid "Clear log"
+msgstr "清除日志"
+
+#: .\theme-editor.py:677
+msgid "Waiting selection"
+msgstr "等待选择"
+
+#: .\theme-editor.py:699
+msgid " Editor"
+msgstr " 编辑器"
+
+#: .\theme-editor.py:704
+msgid "Please input"
+msgstr "请输入"
+
+#: .\theme-editor.py:733
+msgid "Please Select"
+msgstr "请选择"
+
+#: .\theme-editor.py:747 .\theme-editor.py:956
+msgid "Confirm"
+msgstr "确认"
+
+#: .\theme-editor.py:777
+msgid "Select the font in the fonts_dir/"
+msgstr "在fonts_dir/中选择字体"
+
+#: .\theme-editor.py:781
+msgid "Select the picture in "
+msgstr "选择图片 "
+
+#: .\theme-editor.py:785
+msgid "Select the color you like"
+msgstr "选择你喜欢的颜色"
+
+#: .\theme-editor.py:909
+msgid "Name Editor"
+msgstr "名称编辑器"
+
+#: .\theme-editor.py:1210
+msgid "Do you need to save it?"
+msgstr "你需要保存它吗?"
+
+#: .\theme-editor.py:1277
+msgid "Cancel"
+msgstr "取消"
+
+#: .\theme-editor.py:1233
+msgid "NO"
+msgstr "否"
+
+#: .\theme-editor.py:1248
+msgid "OK"
+msgstr "是"
+
+#: .\theme-editor.py:1285
+msgid "Drawing zone from [{},{}] to [{},{}]"
+msgstr "绘图区从 [{},{}] 到 [{},{}]"
+
+#: .\theme-editor.py:1311
+msgid "Zone: X={}, Y={}, width={} height={}"
+msgstr "区域: X={}, Y={}, 宽={} 高={}"
+
+msgid "You need to create a new folder called Photos \n"
+"and place your pictures in it."
+msgstr "你需要新建Photos文件夹\n"
+"并把图片放置在该文件夹下。"
+
+msgid "If you want to add more image,\n"
+"change the dynamic_x name first"
+msgstr "如果你想添加更多图片，\n"
+"首先修改 dynamic_x 名称"
+
+msgid "If you want to add more text,\n"
+"change the dynamic_x name first"
+msgstr "如果你想添加更多文字，\n"
+"首先修改 dynamic_x 名称"
+
+msgid "If you want to add more text,\n"
+"change the TEXT_EXAMPLE name first"
+msgstr "如果你想添加更多的文字，\n"
+"首先修改 TEXT_EXAMPLE 名称"
+
+msgid "If you want to add more image,\n"
+"change the IMAGE_EXAMPLE name first"
+msgstr "如果你想添加更多图片，\n"
+"首先修改 IMAGE_EXAMPLE 名称"
+
+msgid "If you want to add more requests_get,\n"
+"change the get_xx name first"
+msgstr "如果你想添加更多请求，\n"
+"首先修改 get_xx 名称"
+
+msgid "Theme Dir"
+msgstr "主题目录"
+
+msgid "Add"
+msgstr "增加"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "Paste"
+msgstr "粘贴"
+
+msgid "Cut"
+msgstr "剪切"
+
+msgid "Undo"
+msgstr "撤销"
+
+msgid "Redo"
+msgstr "恢复"
+
+msgid "author"
+msgstr "作者"
+
+msgid "display"
+msgstr "副屏配置"
+
+msgid "DISPLAY_ORIENTATION"
+msgstr "显示方向"
+
+msgid "DISPLAY_RGB_LED"
+msgstr "RGB LED灯"
+
+msgid "static_images"
+msgstr "静态图片"
+
+msgid "PATH"
+msgstr "文件路径"
+
+msgid "BACKGROUND_COLOR"
+msgstr "背景颜色"
+
+msgid "BACKGROUND_IMAGE"
+msgstr "背景图片"
+
+msgid "X"
+msgstr "X"
+
+msgid "Y"
+msgstr "Y"
+
+msgid "WIDTH"
+msgstr "宽度"
+
+msgid "HEIGHT"
+msgstr "高度"
+
+msgid "COLOR"
+msgstr "颜色"
+
+msgid "RADIUS"
+msgstr "弧度"
+
+msgid "ALPHA"
+msgstr "透明度"
+
+msgid "static_text"
+msgstr "静态文字"
+
+msgid "TEXT"
+msgstr "文本"
+
+msgid "FONT"
+msgstr "字体"
+
+msgid "FONT_SIZE"
+msgstr "字体大小"
+
+msgid "FONT_COLOR"
+msgstr "字体颜色"
+
+msgid "ALIGN"
+msgstr "对齐方式"
+
+msgid "ANCHOR"
+msgstr "锚点"
+
+msgid "ROTATION"
+msgstr "旋转角度"
+
+msgid "dynamic_texts"
+msgstr "动态文本"
+
+msgid "SHOW"
+msgstr "显示"
+
+msgid "INTERVAL_100mS"
+msgstr "100mS周期刷新"
+
+msgid "dynamic_images"
+msgstr "动态图像"
+
+msgid "photo_album"
+msgstr "相册"
+
+msgid "SHOW_RANDOM"
+msgstr "随机显示"
+
+msgid "AUTO_REFRESH"
+msgstr "自动刷新"
+
+msgid "INTERVAL"
+msgstr "刷新周期(秒)"
+
+msgid "MAX_WIDTH"
+msgstr "最大宽度"
+
+msgid "MAX_HEIGHT"
+msgstr "最大高度"
+
+msgid "requests_get"
+msgstr ""
+
+msgid "GET_TYPE"
+msgstr "GET类型"
+
+msgid "OVERLAY_BG"
+msgstr ""
+
+msgid "STATS"
+msgstr "状态显示"
+
+msgid "CPU"
+msgstr "处理器"
+
+msgid "PERCENTAGE"
+msgstr "百分比"
+
+msgid "GRAPH"
+msgstr "条形图表"
+
+msgid "BAR_COLOR"
+msgstr "条形图颜色"
+
+msgid "BAR_OUTLINE"
+msgstr "条形图轮廓"
+
+msgid "MIN_VALUE"
+msgstr "最小值"
+
+msgid "MAX_VALUE"
+msgstr "最大值"
+
+msgid "RADIAL"
+msgstr "环状条形图"
+
+msgid "ANGLE_START"
+msgstr "开始角度"
+
+msgid "ANGLE_END"
+msgstr "结束角度"
+
+msgid "ANGLE_STEPS"
+msgstr "角度间隔"
+
+msgid "ANGLE_SEP"
+msgstr ""
+
+msgid "CLOCKWISE"
+msgstr "顺时针方向"
+
+msgid "LINE_GRAPH"
+msgstr "折线图"
+
+msgid "HISTORY_SIZE"
+msgstr "历史数据大小"
+
+msgid "AUTOSCALE"
+msgstr "自动缩放"
+
+msgid "LINE_COLOR"
+msgstr "折线颜色"
+
+msgid "LINE_WIDTH"
+msgstr "折线宽度"
+
+msgid "AXIS"
+msgstr "坐标轴"
+
+msgid "AXIS_COLOR"
+msgstr "坐标轴颜色"
+
+msgid "AXIS_FONT"
+msgstr "坐标轴字体"
+
+msgid "AXIS_FONT_SIZE"
+msgstr "坐标轴字体大小"
+
+msgid "POWER"
+msgstr "功耗"
+
+msgid "SHOW_UNIT"
+msgstr "显示单位"
+
+msgid "UNIT_ML"
+msgstr "单位换行显示"
+
+msgid "MIN_SIZE"
+msgstr "最小宽度"
+
+msgid "MAX_SIZE"
+msgstr "最大宽度"
+
+msgid "FREQUENCY"
+msgstr "频率"
+
+msgid "LOAD"
+msgstr "负载率"
+
+msgid "TEMPERATURE"
+msgstr "温度"
+
+msgid "FAN_SPEED"
+msgstr "风扇速度"
+
+msgid "GPU"
+msgstr "显卡"
+
+msgid "MEMORY_PERCENT"
+msgstr "内存百分比"
+
+msgid "MEMORY_USED"
+msgstr "已使用的内存"
+
+msgid "MEMORY_TOTAL"
+msgstr "总内存"
+
+msgid "FPS"
+msgstr "帧率"
+
+msgid "MEMORY"
+msgstr "内存"
+
+msgid "SWAP"
+msgstr ""
+
+msgid "VIRTUAL"
+msgstr ""
+
+msgid "USED"
+msgstr "已使用"
+
+msgid "FREE"
+msgstr "空闲"
+
+msgid "TOTAL"
+msgstr "总共"
+
+msgid "DISK"
+msgstr "硬盘"
+
+msgid "NET"
+msgstr "网络"
+
+msgid "WLO"
+msgstr "无线网络"
+
+msgid "UPLOAD"
+msgstr "上传速率"
+
+msgid "UPLOADED"
+msgstr "总上传量"
+
+msgid "DOWNLOAD"
+msgstr "下载速率"
+
+msgid "DOWNLOADED"
+msgstr "总下载量"
+
+msgid "ETH"
+msgstr "有线网络"
+
+msgid "DATE"
+msgstr "时间日期"
+
+msgid "DAY"
+msgstr "日期"
+
+msgid "HOUR"
+msgstr "小时"
+
+msgid "UPTIME"
+msgstr "开机时间"
+
+msgid "SECONDS"
+msgstr "秒"
+
+msgid "FORMATTED"
+msgstr "格式化"
+
+msgid "VOLUME"
+msgstr "音量"
+
+msgid "LCD_SENSOR"
+msgstr "副屏传感器"
+
+msgid "HUMIDNESS"
+msgstr "温湿度"
+
+msgid "WEATHER"
+msgstr "天气"
+
+msgid "INPUT_MONITOR"
+msgstr "输入监控"
+
+msgid "MOUSE_CLICK_COUNT"
+msgstr "鼠标点击次数"
+
+msgid "KEYBOARD_PRESS_COUNT"
+msgstr "键盘点击次数"
+
+msgid "PERCENT_TEXT"
+msgstr "百分比文字"
+
+msgid "SHOW_TEXT"
+msgstr "显示文本"
+
+msgid "media_get"
+msgstr "GSMTC 当前播放内容获取"
+
+msgid "thumbnail"
+msgstr "缩略图"
+
+msgid "title"
+msgstr "名称"
+
+msgid "title_simple"
+msgstr "简易名称"
+
+msgid "artist"
+msgstr "艺术家"
+
+msgid "album"
+msgstr "专辑"
+
+msgid "start_time"
+msgstr "开始时间"
+
+msgid "position"
+msgstr "位置"
+
+msgid "end_time"
+msgstr "结束时间"
+
+msgid "progress_bar"
+msgstr "进度条"
+
+msgid "TEMP_TYPE"
+msgstr "温度类型"
+

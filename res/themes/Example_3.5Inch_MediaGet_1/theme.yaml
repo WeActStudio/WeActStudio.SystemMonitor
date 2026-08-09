@@ -1,0 +1,139 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_SIZE: 320x480
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 88, 88, 88
+
+static_images:
+  background:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 320
+    HEIGHT: 480
+
+static_text:
+  hello:
+    TEXT: Hello World !
+    X: 10
+    Y: 10
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_SIZE: 20
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_IMAGE: background.png
+    ALIGN: left # left / center / right
+    ANCHOR: lt  # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+  hello_weact:
+    TEXT: Hello WeAct Studio !
+    X: 10
+    Y: 35
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_SIZE: 20
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_IMAGE: background.png
+    ALIGN: left # left / center / right
+    ANCHOR: lt  # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+media_get:
+  # GSMTC: Global System Media Transport Controls
+  thumbnail:
+    SHOW: true
+    BACKGROUND_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+    X: 0
+    Y: 75
+    ALIGN: center
+    MAX_WIDTH: 320
+    MAX_HEIGHT: 320
+    RADIUS: 0
+  title:
+    SHOW: true
+    SCROLL_SPEED: 5
+    X: 160
+    Y: 400
+    # Text sensors may vary in size and create "ghosting" effects where old value stay displayed under the new one.
+    # To avoid this use one of these 2 methods (or both):
+    #   - either use a monospaced font (fonts with "mono" in name, see res/fonts/ for available fonts)
+    #   - or force a static width/height for the text field. Be sure to have enough space for the longest value that can be displayed (e.g. "100%" for a percentage)
+    WIDTH: 0   # Uncomment to force a static width
+    HEIGHT: 20  # Uncomment to force static height
+    FONT: SourceHanSansCN\SourceHanSansCN-Heavy.otf
+    FONT_SIZE: 16
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+    ANCHOR: mt   # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+  artist:
+    SHOW: true
+    SCROLL_SPEED: 5
+    X: 160
+    Y: 420
+    # Text sensors may vary in size and create "ghosting" effects where old value stay displayed under the new one.
+    # To avoid this use one of these 2 methods (or both):
+    #   - either use a monospaced font (fonts with "mono" in name, see res/fonts/ for available fonts)
+    #   - or force a static width/height for the text field. Be sure to have enough space for the longest value that can be displayed (e.g. "100%" for a percentage)
+    WIDTH: 0   # Uncomment to force a static width
+    HEIGHT: 20  # Uncomment to force static height
+    FONT: SourceHanSansCN\SourceHanSansCN-Heavy.otf
+    FONT_SIZE: 16
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+    ANCHOR: mt   # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+  album:
+    SHOW: true
+    SCROLL_SPEED: 5
+    X: 160
+    Y: 440
+    # Text sensors may vary in size and create "ghosting" effects where old value stay displayed under the new one.
+    # To avoid this use one of these 2 methods (or both):
+    #   - either use a monospaced font (fonts with "mono" in name, see res/fonts/ for available fonts)
+    #   - or force a static width/height for the text field. Be sure to have enough space for the longest value that can be displayed (e.g. "100%" for a percentage)
+    WIDTH: 0   # Uncomment to force a static width
+    HEIGHT: 20  # Uncomment to force static height
+    FONT: SourceHanSansCN\SourceHanSansCN-Heavy.otf
+    FONT_SIZE: 16
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+    ANCHOR: mt   # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+  end_time:
+    SHOW: true
+    X: 280
+    Y: 468
+    # Text sensors may vary in size and create "ghosting" effects where old value stay displayed under the new one.
+    # To avoid this use one of these 2 methods (or both):
+    #   - either use a monospaced font (fonts with "mono" in name, see res/fonts/ for available fonts)
+    #   - or force a static width/height for the text field. Be sure to have enough space for the longest value that can be displayed (e.g. "100%" for a percentage)
+    WIDTH: 0   # Uncomment to force a static width
+    HEIGHT: 0   # Uncomment to force static height
+    FONT: fusion-pixel\fusion-pixel-12px-monospaced-zh_hans.otf
+    FONT_SIZE: 12
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+    ANCHOR: lt   # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+  progress_bar:
+    SHOW: true
+    X: 50
+    Y: 468
+    WIDTH: 220
+    HEIGHT: 10
+    BAR_COLOR: 255, 0, 0
+    BAR_OUTLINE: false
+    BACKGROUND_COLOR: 45, 45, 45
+  position:
+    SHOW: true
+    X: 10
+    Y: 468
+    # Text sensors may vary in size and create "ghosting" effects where old value stay displayed under the new one.
+    # To avoid this use one of these 2 methods (or both):
+    #   - either use a monospaced font (fonts with "mono" in name, see res/fonts/ for available fonts)
+    #   - or force a static width/height for the text field. Be sure to have enough space for the longest value that can be displayed (e.g. "100%" for a percentage)
+    WIDTH: 0   # Uncomment to force a static width
+    HEIGHT: 0   # Uncomment to force static height
+    FONT: fusion-pixel\fusion-pixel-12px-monospaced-zh_hans.otf
+    FONT_SIZE: 12
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+    ANCHOR: lt   # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html

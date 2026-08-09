@@ -1,0 +1,81 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_ORIENTATION: landscape
+  DISPLAY_RGB_LED: 0, 0, 255
+static_images:
+  BACKGROUND:
+    BACKGROUND_IMAGE: background.png
+    HEIGHT: 320
+    PATH: theme_res_541546.png
+    WIDTH: 480
+    X: 0
+    Y: 0
+STATS:
+  CPU:
+    FREQUENCY:
+      INTERVAL: 5
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 35
+        SHOW: true
+        SHOW_UNIT: false
+        X: 335
+        Y: 62
+    PERCENTAGE:
+      INTERVAL: 1
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: false
+        X: 35
+        Y: 56
+    TEMPERATURE:
+      INTERVAL: 5
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: false
+        X: 180
+        Y: 56
+  GPU:
+    INTERVAL: 1
+    PERCENTAGE:
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: false
+        X: 35
+        Y: 210
+    TEMPERATURE:
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: false
+        X: 180
+        Y: 210
+  MEMORY:
+    INTERVAL: 5
+    VIRTUAL:
+      PERCENT_TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: false
+        X: 346
+        Y: 210

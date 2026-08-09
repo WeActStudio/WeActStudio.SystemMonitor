@@ -1,0 +1,297 @@
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-01-16 23:32+0800\n"
+"PO-Revision-Date: 2025-08-15 10:34+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.5\n"
+
+#: .\configure.py:92
+msgid "landscape"
+msgstr "横長"
+
+#: .\configure.py:92
+msgid "portrait"
+msgstr "縦長"
+
+#: .\configure.py:114
+msgid "Automatic"
+msgstr "自動"
+
+#: .\configure.py:117
+msgid "Fake random data"
+msgstr "ダミーランダムデータ"
+
+#: .\configure.py:118
+msgid "Fake static data"
+msgstr "ダミー固定データ"
+
+#: .\configure.py:120
+msgid "Classic"
+msgstr "正方向"
+
+#: .\configure.py:120
+msgid "Reverse"
+msgstr "逆方向"
+
+#: .\configure.py:155
+msgid "Automatic detection"
+msgstr "自動認識"
+
+#: .\configure.py:198
+msgid "WeAct Studio System Monitor Configuration"
+msgstr "WeAct Studio System Monitor 設定"
+
+#: .\configure.py:217
+msgid "Display configuration"
+msgstr "表示設定"
+
+#: .\configure.py:221
+msgid "Screen model"
+msgstr "Model名称"
+
+#: .\configure.py:231
+msgid "Screen size"
+msgstr "画面サイズ"
+
+#: .\configure.py:240
+msgid "COM port"
+msgstr "COMポート"
+
+#: .\configure.py:247
+msgid "Orientation"
+msgstr "表示方向"
+
+#: .\configure.py:255
+msgid "Brightness"
+msgstr "明度"
+
+#: .\configure.py:275
+msgid "Theme Preview, Auto Save"
+msgstr "テーマ確認、自動保存"
+
+#: .\configure.py:280
+msgid "Other Config"
+msgstr "その他の設定"
+
+#: .\configure.py:287
+msgid "System Monitor Configuration"
+msgstr "システムモニタ設定"
+
+#: .\configure.py:291
+msgid "Theme"
+msgstr "テーマ"
+
+#: .\configure.py:297
+msgid "Refresh"
+msgstr "更新"
+
+#: .\configure.py:301
+msgid "Hardware monitoring"
+msgstr "モニタライブラリ"
+
+#: .\configure.py:311
+msgid "Ethernet interface"
+msgstr "有線ネットワーク"
+
+#: .\configure.py:316
+msgid "Wi-Fi interface"
+msgstr "Wi-Fiネットワーク"
+
+#: .\configure.py:324
+msgid "Restart as admin. or select another Hardware monitoring"
+msgstr "アドミニストレータ権限での実行が必要です"
+
+#: .\configure.py:341
+msgid "Edit theme"
+msgstr "テーマ編集"
+
+#: .\configure.py:346
+msgid "Save settings"
+msgstr "設定保存"
+
+#: .\configure.py:351
+msgid "Save and run"
+msgstr "保存と実行"
+
+#: .\configure.py:357
+msgid "New theme"
+msgstr "新規テーマ"
+
+#: .\configure.py:364
+msgid "Delete theme"
+msgstr "テーマ削除"
+
+#: .\configure.py:389
+msgid "Bootstrap"
+msgstr "自動実行"
+
+#: .\configure.py:395
+msgid "Enable"
+msgstr "設定"
+
+#: .\configure.py:483
+msgid "Error: "
+msgstr "エラー: "
+
+#: .\configure.py:427
+msgid "Close Confirm"
+msgstr "終了"
+
+#: .\configure.py:462 .\configure.py:991
+msgid "NO"
+msgstr "いいえ"
+
+#: .\configure.py:475 .\configure.py:1012
+msgid "OK"
+msgstr "はい"
+
+#: .\configure.py:446
+msgid "Do you want to run theme?"
+msgstr "テーマを実行しますか?"
+
+#: .\configure.py:483 .\configure.py:491 .\configure.py:547 .\configure.py:555
+#: .\configure.py:871 .\configure.py:875 .\configure.py:906 .\configure.py:969
+#: .\configure.py:988
+msgid "Error"
+msgstr "エラー"
+
+#: .\configure.py:491
+msgid "error: COM Port is closed"
+msgstr "エラー: COMポートが閉じられています"
+
+#: .\configure.py:547 .\configure.py:555
+msgid "error: "
+msgstr "エラー: "
+
+#: .\configure.py:587
+msgid "Author: "
+msgstr "作者: "
+
+#: .\configure.py:827
+msgid "Theme name already exists."
+msgstr "テーマ名がすでに使われています。"
+
+#: .\configure.py:788
+msgid "Cancel"
+msgstr "Cancel"
+
+#: .\configure.py:832
+msgid "Name"
+msgstr "名称"
+
+#: .\configure.py:836
+msgid "Error input: "
+msgstr "エラー入力: "
+
+#: .\configure.py:934
+msgid "Delete theme: "
+msgstr "テーマ削除: "
+
+#: .\configure.py:969
+msgid "theme editor is running !"
+msgstr "テーマエディターは実行中です !"
+
+#: .\configure.py:988
+msgid "display other config is running !"
+msgstr "他の設定アプリが実行中です !"
+
+msgid "Free Off(3 min)"
+msgstr "自動終了(3分)"
+
+msgid "Theme dir"
+msgstr "テーマフォルダ"
+
+msgid "Copy theme"
+msgstr "テーマコピー"
+
+msgid "Ping & Weather"
+msgstr "Ping & 天気"
+
+msgid "Ping & Weather Configure"
+msgstr "Ping & 天気設定"
+
+msgid "Hostname / IP to ping"
+msgstr "Hostname / IP to ping"
+
+msgid "Weather forecast (OpenWeatherMap API)"
+msgstr "天気予報（OpenWeatherMap API）"
+
+msgid ""
+"To display weather forecast on themes that support it, you need an OpenWeatherMap API key.\n"
+"It use \"Current weather data api\": https://openweathermap.org/current .\n"
+"You will get 1,000 API calls per day for free. This program is configured to stay under this threshold (~300 calls/day)."
+msgstr ""
+"天気予報をサポートするテーマで表示するには、OpenWeatherMap APIキーが必要です。\n"
+"利用するには「Current weather data api」：https://openweathermap.org/current。\n"
+"1日1000件のAPI呼び出しが無料で可能です。プログラムはこの閾値以下(約300回/日)に設定されます。"
+
+msgid "Click here to Create an OpenWeatherMap Account."
+msgstr "こちらをクリックしてOpenWeatherMapアカウントを作成してください。"
+
+msgid "You can use online services to get your latitude/longitude e.g. latlong.net (click here)"
+msgstr "オンラインサービスを利用して緯度と経度を取得することができます。例えば、latlong.net（ここをクリック）です。"
+
+msgid "Latitude"
+msgstr "緯度"
+
+msgid "Longitude"
+msgstr "経度"
+
+msgid "Get via IP"
+msgstr "IPを介して取得"
+
+msgid "Units"
+msgstr "単位"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Test Ping"
+msgstr "テストPing"
+
+msgid "Test API"
+msgstr "テストAPI"
+
+msgid "Workspace Settings"
+msgstr "ワークスペースの設定"
+
+msgid "Themes Folder:"
+msgstr "テーマフォルダ:"
+
+msgid "Select Folder"
+msgstr "フォルダーを選択"
+
+msgid "Fonts Folder:"
+msgstr "フォントフォルダー:"
+
+msgid "Error: Another instance of the program is already running."
+msgstr "エラー: プログラムの別のインスタンスがすでに実行中です。"
+
+msgid "Picture Compress"
+msgstr "画像圧縮"
+
+msgid "Copy"
+msgstr "コピー"
+
+msgid "Paste"
+msgstr "ペースト"
+
+msgid "Cut"
+msgstr "切る"
+
+msgid "Undo"
+msgstr "アンドゥ"
+
+msgid "Redo"
+msgstr "リドゥ"

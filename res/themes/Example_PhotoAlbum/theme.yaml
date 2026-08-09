@@ -1,0 +1,93 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 0, 0, 0
+  DISPLAY_SIZE: 320x480
+static_images:
+  background:
+    HEIGHT: 480
+    PATH: background.png
+    WIDTH: 320
+    X: 0
+    Y: 0
+photo_album:
+  ALIGN: center
+  AUTO_REFRESH: true
+  BACKGROUND_COLOR: 0, 0, 0
+  INTERVAL: 10
+  MAX_HEIGHT: 455
+  MAX_WIDTH: 0
+  SHOW: true
+  SHOW_RANDOM: false
+  X: 0
+  Y: 0
+STATS:
+  DATE:
+    DAY:
+      TEXT:
+        ALIGN: left
+        ANCHOR: lm
+        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 15
+        FORMAT: short
+        HEIGHT: 0
+        SHOW: true
+        WIDTH: 0
+        X: 10
+        Y: 470
+    HOUR:
+      TEXT:
+        ALIGN: left
+        ANCHOR: lm
+        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 15
+        FORMAT: medium
+        HEIGHT: 0
+        SHOW: true
+        WIDTH: 0
+        X: 108
+        Y: 470
+    INTERVAL: 1
+  LCD_SENSOR:
+    HUMIDNESS:
+      INTERVAL: 5
+      TEXT:
+        ALIGN: right
+        ANCHOR: lm
+        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 15
+        HEIGHT: 0
+        MIN_SIZE: 0
+        SHOW: true
+        SHOW_UNIT: true
+        UNIT_ML: false
+        WIDTH: 0
+        X: 255
+        Y: 470
+    TEMPERATURE:
+      INTERVAL: 5
+      TEXT:
+        ALIGN: right
+        ANCHOR: lm
+        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 15
+        HEIGHT: 0
+        MIN_SIZE: 0
+        SHOW: true
+        SHOW_UNIT: true
+        UNIT_ML: false
+        WIDTH: 0
+        X: 190
+        Y: 470

@@ -1,0 +1,476 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-09-17 09:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp936\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: .\theme-editor.py:218
+msgid "WeAct Studio System Monitor Theme Editor"
+msgstr ""
+
+#: .\theme-editor.py:257
+msgid "Click or draw a zone to show coordinates"
+msgstr ""
+
+#: .\theme-editor.py:267
+msgid "This preview size: "
+msgstr ""
+
+#: .\theme-editor.py:305
+msgid "Save to file"
+msgstr ""
+
+#: .\theme-editor.py:312
+msgid "Image Scaler"
+msgstr ""
+
+msgid "GIF Scaler"
+msgstr ""
+
+#: .\theme-editor.py:354
+msgid "Clear log"
+msgstr ""
+
+#: .\theme-editor.py:711
+msgid "Waiting selection"
+msgstr ""
+
+#: .\theme-editor.py:733
+msgid " Editor"
+msgstr ""
+
+#: .\theme-editor.py:739
+msgid "Please input"
+msgstr ""
+
+#: .\theme-editor.py:775
+msgid "Please Select"
+msgstr ""
+
+#: .\theme-editor.py:790 .\theme-editor.py:944 .\theme-editor.py:1010
+#: .\theme-editor.py:1247
+msgid "Confirm"
+msgstr ""
+
+#: .\theme-editor.py:825
+msgid "Select the font in the fonts_dir/"
+msgstr ""
+
+#: .\theme-editor.py:829
+msgid "Select the picture in "
+msgstr ""
+
+#: .\theme-editor.py:833
+msgid "Select the color you like"
+msgstr ""
+
+#: .\theme-editor.py:962
+msgid "Name Editor"
+msgstr ""
+
+#: .\theme-editor.py:1260
+msgid "Do you need to save it?"
+msgstr ""
+
+#: .\theme-editor.py:1277
+msgid "Cancel"
+msgstr ""
+
+#: .\theme-editor.py:1283
+msgid "NO"
+msgstr ""
+
+#: .\theme-editor.py:1298
+msgid "OK"
+msgstr ""
+
+#: .\theme-editor.py:1346
+msgid "Drawing zone from [{},{}] to [{},{}]"
+msgstr ""
+
+#: .\theme-editor.py:1374
+msgid "Zone: X={}, Y={}, width={} height={}"
+msgstr ""
+
+msgid "You need to create a new folder called Photos \nand place your pictures in it."
+msgstr ""
+
+msgid "If you want to add more image,\nchange the dynamic_x name first"
+msgstr ""
+
+msgid "If you want to add more text,\nchange the dynamic_x name first"
+msgstr ""
+
+msgid "If you want to add more text,\nchange the TEXT_EXAMPLE name first"
+msgstr ""
+
+msgid "If you want to add more image,\nchange the IMAGE_EXAMPLE name first"
+msgstr ""
+
+msgid "If you want to add more requests_get,\nchange the get_xx name first"
+msgstr ""
+
+msgid "Theme dir"
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Paste"
+msgstr ""
+
+msgid "Cut"
+msgstr ""
+
+msgid "Undo"
+msgstr ""
+
+msgid "Redo"
+msgstr ""
+
+msgid "author"
+msgstr ""
+
+msgid "display"
+msgstr ""
+
+msgid "DISPLAY_ORIENTATION"
+msgstr ""
+
+msgid "DISPLAY_RGB_LED"
+msgstr ""
+
+msgid "static_images"
+msgstr ""
+
+msgid "PATH"
+msgstr ""
+
+msgid "BACKGROUND_COLOR"
+msgstr ""
+
+msgid "BACKGROUND_IMAGE"
+msgstr ""
+
+msgid "X"
+msgstr ""
+
+msgid "Y"
+msgstr ""
+
+msgid "WIDTH"
+msgstr ""
+
+msgid "HEIGHT"
+msgstr ""
+
+msgid "COLOR"
+msgstr ""
+
+msgid "RADIUS"
+msgstr ""
+
+msgid "ALPHA"
+msgstr ""
+
+msgid "static_text"
+msgstr ""
+
+msgid "TEXT"
+msgstr ""
+
+msgid "FONT"
+msgstr ""
+
+msgid "FONT_SIZE"
+msgstr ""
+
+msgid "FONT_COLOR"
+msgstr ""
+
+msgid "ALIGN"
+msgstr ""
+
+msgid "ANCHOR"
+msgstr ""
+
+msgid "ROTATION"
+msgstr ""
+
+msgid "dynamic_texts"
+msgstr ""
+
+msgid "SHOW"
+msgstr ""
+
+msgid "INTERVAL_100mS"
+msgstr ""
+
+msgid "dynamic_images"
+msgstr ""
+
+msgid "photo_album"
+msgstr ""
+
+msgid "SHOW_RANDOM"
+msgstr ""
+
+msgid "AUTO_REFRESH"
+msgstr ""
+
+msgid "INTERVAL"
+msgstr ""
+
+msgid "MAX_WIDTH"
+msgstr ""
+
+msgid "MAX_HEIGHT"
+msgstr ""
+
+msgid "requests_get"
+msgstr ""
+
+msgid "GET_TYPE"
+msgstr ""
+
+msgid "OVERLAY_BG"
+msgstr ""
+
+msgid "STATS"
+msgstr ""
+
+msgid "CPU"
+msgstr ""
+
+msgid "PERCENTAGE"
+msgstr ""
+
+msgid "GRAPH"
+msgstr ""
+
+msgid "BAR_COLOR"
+msgstr ""
+
+msgid "BAR_OUTLINE"
+msgstr ""
+
+msgid "MIN_VALUE"
+msgstr ""
+
+msgid "MAX_VALUE"
+msgstr ""
+
+msgid "RADIAL"
+msgstr ""
+
+msgid "ANGLE_START"
+msgstr ""
+
+msgid "ANGLE_END"
+msgstr ""
+
+msgid "ANGLE_STEPS"
+msgstr ""
+
+msgid "ANGLE_SEP"
+msgstr ""
+
+msgid "CLOCKWISE"
+msgstr ""
+
+msgid "LINE_GRAPH"
+msgstr ""
+
+msgid "HISTORY_SIZE"
+msgstr ""
+
+msgid "AUTOSCALE"
+msgstr ""
+
+msgid "LINE_COLOR"
+msgstr ""
+
+msgid "LINE_WIDTH"
+msgstr ""
+
+msgid "AXIS"
+msgstr ""
+
+msgid "AXIS_COLOR"
+msgstr ""
+
+msgid "AXIS_FONT"
+msgstr ""
+
+msgid "AXIS_FONT_SIZE"
+msgstr ""
+
+msgid "POWER"
+msgstr ""
+
+msgid "SHOW_UNIT"
+msgstr ""
+
+msgid "UNIT_ML"
+msgstr ""
+
+msgid "MIN_SIZE"
+msgstr ""
+
+msgid "FREQUENCY"
+msgstr ""
+
+msgid "LOAD"
+msgstr ""
+
+msgid "TEMPERATURE"
+msgstr ""
+
+msgid "FAN_SPEED"
+msgstr ""
+
+msgid "GPU"
+msgstr ""
+
+msgid "MEMORY_PERCENT"
+msgstr ""
+
+msgid "MEMORY_USED"
+msgstr ""
+
+msgid "MEMORY_TOTAL"
+msgstr ""
+
+msgid "FPS"
+msgstr ""
+
+msgid "MEMORY"
+msgstr ""
+
+msgid "SWAP"
+msgstr ""
+
+msgid "VIRTUAL"
+msgstr ""
+
+msgid "USED"
+msgstr ""
+
+msgid "FREE"
+msgstr ""
+
+msgid "TOTAL"
+msgstr ""
+
+msgid "DISK"
+msgstr ""
+
+msgid "NET"
+msgstr ""
+
+msgid "UPLOAD"
+msgstr ""
+
+msgid "WLO"
+msgstr ""
+
+msgid "UPLOADED"
+msgstr ""
+
+msgid "DOWNLOAD"
+msgstr ""
+
+msgid "DOWNLOADED"
+msgstr ""
+
+msgid "ETH"
+msgstr ""
+
+msgid "DATE"
+msgstr ""
+
+msgid "DAY"
+msgstr ""
+
+msgid "HOUR"
+msgstr ""
+
+msgid "UPTIME"
+msgstr ""
+
+msgid "SECONDS"
+msgstr ""
+
+msgid "FORMATTED"
+msgstr ""
+
+msgid "VOLUME"
+msgstr ""
+
+msgid "LCD_SENSOR"
+msgstr ""
+
+msgid "HUMIDNESS"
+msgstr ""
+
+msgid "WEATHER"
+msgstr ""
+
+msgid "INPUT_MONITOR"
+msgstr ""
+
+msgid "MOUSE_CLICK_COUNT"
+msgstr ""
+
+msgid "KEYBOARD_PRESS_COUNT"
+msgstr ""
+
+msgid "PERCENT_TEXT"
+msgstr ""
+
+msgid "SHOW_TEXT"
+msgstr ""
+
+msgid "media_get"
+msgstr ""
+
+msgid "thumbnail"
+msgstr ""
+
+msgid "title"
+msgstr ""
+
+msgid "title_simple"
+msgstr ""
+
+msgid "artist"
+msgstr ""
+
+msgid "album"
+msgstr ""
+
+msgid "start_time"
+msgstr ""
+
+msgid "position"
+msgstr ""
+
+msgid "end_time"
+msgstr ""
+
+msgid "progress_bar"
+msgstr ""
+
+msgid "TEMP_TYPE"
+msgstr ""

@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-09-15 00:42+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp936\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: .\main.py:177 .\main.py:178
+msgid "WeAct Studio System Monitor"
+msgstr ""
+
+#: .\main.py:182
+msgid "Configure"
+msgstr ""
+
+#: .\main.py:186
+msgid "Exit"
+msgstr ""
+
+#: .\main.py:246 .\main.py:289 .\main.py:363
+msgid "Error"
+msgstr ""
+
+#: .\main.py:246 .\main.py:289 .\main.py:363
+msgid "Error: "
+msgstr ""
+
+msgid "Starting ..."
+msgstr ""
+
+msgid "Error: Another instance of the program is already running."
+msgstr ""
+
+msgid "The icon has been displayed in the tray. Click the icon to open the configuration."
+msgstr ""

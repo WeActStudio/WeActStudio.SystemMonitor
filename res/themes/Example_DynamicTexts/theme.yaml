@@ -1,0 +1,89 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 0, 0, 0
+  DISPLAY_SIZE: 320x480
+static_images:
+  background:
+    HEIGHT: 480
+    PATH: background.png
+    WIDTH: 320
+    X: 0
+    Y: 0
+static_text:
+  hello:
+    ALIGN: left
+    ANCHOR: lt
+    BACKGROUND_IMAGE: background.png
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    TEXT: Hello World !
+    X: 10
+    Y: 10
+  hello_weact:
+    ALIGN: left
+    ANCHOR: lt
+    BACKGROUND_IMAGE: background.png
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    TEXT: Hello WeAct Studio !
+    X: 10
+    Y: 35
+dynamic_texts:
+  BACKGROUND_COLOR: 0, 0, 0
+  BACKGROUND_IMAGE: background.png
+  SHOW: true
+  dynamic_0:
+    ALIGN: left
+    ANCHOR: lt
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    HEIGHT: 20
+    ID: 0
+    INTERVAL_100mS: 10
+    TEXT: '1'
+    WIDTH: 120
+    X: 10
+    Y: 100
+  dynamic_1:
+    ALIGN: left
+    ANCHOR: lt
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    HEIGHT: 20
+    ID: 1
+    INTERVAL_100mS: 10
+    TEXT: '2'
+    WIDTH: 100
+    X: 10
+    Y: 100
+  dynamic_2:
+    ALIGN: left
+    ANCHOR: lt
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    HEIGHT: 20
+    ID: 2
+    INTERVAL_100mS: 10
+    TEXT: '3'
+    WIDTH: 100
+    X: 10
+    Y: 100
+  dynamic_3:
+    ALIGN: left
+    ANCHOR: lt
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    HEIGHT: 0
+    ID: 3
+    INTERVAL_100mS: 10
+    TEXT: Hello World!
+    WIDTH: 110
+    X: 10
+    Y: 100

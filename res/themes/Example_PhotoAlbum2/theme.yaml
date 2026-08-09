@@ -1,0 +1,94 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_ORIENTATION: landscape
+  DISPLAY_RGB_LED: 0, 255, 128
+  DISPLAY_SIZE: 320x480
+static_images:
+  BACKGROUND:
+    HEIGHT: 320
+    PATH: background.png
+    WIDTH: 480
+    X: 0
+    Y: 0
+photo_album:
+  ALIGN: center
+  AUTO_REFRESH: false
+  BACKGROUND_COLOR: 0, 0, 0
+  BACKGROUND_IMAGE: background.png
+  INTERVAL: 10
+  MAX_HEIGHT: 290
+  MAX_WIDTH: 480
+  SHOW: true
+  SHOW_RANDOM: false
+  X: 0
+  Y: 0
+STATS:
+  DATE:
+    DAY:
+      TEXT:
+        ALIGN: left
+        ANCHOR: lm
+        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+        FONT: roboto-mono/RobotoMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 20
+        FORMAT: short
+        HEIGHT: 0
+        SHOW: true
+        WIDTH: 0
+        X: 10
+        Y: 305
+    HOUR:
+      TEXT:
+        ALIGN: left
+        ANCHOR: lm
+        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+        FONT: roboto-mono/RobotoMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 20
+        FORMAT: medium
+        HEIGHT: 0
+        SHOW: true
+        WIDTH: 0
+        X: 148
+        Y: 305
+    INTERVAL: 1
+  LCD_SENSOR:
+    HUMIDNESS:
+      INTERVAL: 5
+      TEXT:
+        ALIGN: right
+        ANCHOR: lm
+        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 20
+        HEIGHT: 0
+        MIN_SIZE: 0
+        SHOW: true
+        SHOW_UNIT: true
+        UNIT_ML: false
+        WIDTH: 0
+        X: 390
+        Y: 305
+    TEMPERATURE:
+      INTERVAL: 5
+      TEXT:
+        ALIGN: right
+        ANCHOR: lm
+        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 20
+        HEIGHT: 0
+        MIN_SIZE: 0
+        SHOW: true
+        SHOW_UNIT: true
+        UNIT_ML: false
+        WIDTH: 0
+        X: 300
+        Y: 305

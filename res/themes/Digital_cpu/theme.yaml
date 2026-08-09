@@ -1,0 +1,38 @@
+display:
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 0, 0, 0
+static_images:
+  BACKGROUND:
+    PATH: background_digital.png
+    X: 0
+    Y: 0
+    WIDTH: 320
+    HEIGHT: 480
+STATS:
+  CPU:
+    PERCENTAGE:
+      INTERVAL: 5
+      TEXT:
+        SHOW: true
+        SHOW_UNIT: false
+        X: 23
+        Y: 350
+        FONT: digital/DIGITAL-7.TTF
+        FONT_SIZE: 200
+        FONT_COLOR: 20, 240, 116
+        # BACKGROUND_COLOR: 132, 154, 165
+        BACKGROUND_IMAGE: background_digital.png
+        ANCHOR: lm
+        ALIGN: left
+    TEMPERATURE:
+      INTERVAL: 2
+      TEXT:
+        SHOW: true
+        SHOW_UNIT: false
+        X: 23
+        Y: 80
+        FONT: digital/DIGITAL-7.TTF
+        FONT_SIZE: 200
+        FONT_COLOR: 248, 195, 34
+        # BACKGROUND_COLOR: 132, 154, 165
+        BACKGROUND_IMAGE: background_digital.png

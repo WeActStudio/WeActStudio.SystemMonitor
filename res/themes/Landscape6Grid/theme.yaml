@@ -1,0 +1,80 @@
+STATS:
+  CPU:
+    FREQUENCY:
+      INTERVAL: 5
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: false
+        X: 355
+        Y: 56
+    PERCENTAGE:
+      INTERVAL: 1
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: true
+        X: 35
+        Y: 56
+    TEMPERATURE:
+      INTERVAL: 5
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: true
+        X: 180
+        Y: 56
+  GPU:
+    INTERVAL: 1
+    PERCENTAGE:
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: true
+        X: 35
+        Y: 201
+    TEMPERATURE:
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: true
+        X: 180
+        Y: 201
+  MEMORY:
+    INTERVAL: 5
+    VIRTUAL:
+      PERCENT_TEXT:
+        BACKGROUND_IMAGE: background_empty_dark.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 40
+        SHOW: true
+        SHOW_UNIT: true
+        X: 350
+        Y: 201
+author: '@mathoudebine'
+display:
+  DISPLAY_ORIENTATION: landscape
+  DISPLAY_RGB_LED: 0, 0, 255
+static_images:
+  BACKGROUND:
+    HEIGHT: 320
+    PATH: background.png
+    WIDTH: 480
+    X: 0
+    Y: 0

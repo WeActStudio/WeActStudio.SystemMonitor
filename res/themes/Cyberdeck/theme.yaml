@@ -1,0 +1,212 @@
+STATS:
+  CPU:
+    FAN_SPEED:
+      INTERVAL: 5
+      RADIAL:
+        ANGLE_END: 220
+        ANGLE_SEP: 0
+        ANGLE_START: 220
+        ANGLE_STEPS: 20
+        BACKGROUND_IMAGE: background.png
+        BAR_COLOR: 200, 100, 50
+        CLOCKWISE: true
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_COLOR: 248, 177, 51
+        FONT_SIZE: 15
+        MAX_VALUE: 100
+        MIN_VALUE: 0
+        RADIUS: 31
+        SHOW: true
+        SHOW_TEXT: true
+        SHOW_UNIT: true
+        WIDTH: 13
+        X: 170
+        Y: 130
+    PERCENTAGE:
+      INTERVAL: 1
+      RADIAL:
+        ANGLE_END: 420
+        ANGLE_SEP: 0
+        ANGLE_START: 60
+        ANGLE_STEPS: 20
+        BACKGROUND_IMAGE: background.png
+        BAR_COLOR: 248, 177, 51
+        CLOCKWISE: true
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_COLOR: 248, 177, 51
+        FONT_SIZE: 20
+        MAX_VALUE: 100
+        MIN_VALUE: 0
+        RADIUS: 39
+        SHOW: true
+        SHOW_TEXT: true
+        SHOW_UNIT: true
+        WIDTH: 15
+        X: 80
+        Y: 70
+    TEMPERATURE:
+      INTERVAL: 5
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_COLOR: 248, 177, 51
+        FONT_SIZE: 23
+        SHOW: true
+        SHOW_UNIT: true
+        X: 34
+        Y: 135
+  GPU:
+    FAN_SPEED:
+      RADIAL:
+        ANGLE_END: 320
+        ANGLE_SEP: 0
+        ANGLE_START: 320
+        ANGLE_STEPS: 20
+        BACKGROUND_IMAGE: background.png
+        BAR_COLOR: 200, 100, 50
+        CLOCKWISE: false
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_COLOR: 248, 177, 51
+        FONT_SIZE: 15
+        MAX_VALUE: 100
+        MIN_VALUE: 0
+        RADIUS: 31
+        SHOW: true
+        SHOW_TEXT: true
+        SHOW_UNIT: true
+        WIDTH: 13
+        X: 233
+        Y: 68
+    FPS:
+      LINE_GRAPH:
+        AUTOSCALE: true
+        AXIS: true
+        BACKGROUND_IMAGE: background.png
+        HEIGHT: 82
+        HISTORY_SIZE: 100
+        LINE_COLOR: 255, 255, 255
+        MAX_VALUE: 144
+        MIN_VALUE: 0
+        SHOW: true
+        WIDTH: 133
+        X: 180
+        Y: 220
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 255, 255, 255
+        FONT_SIZE: 27
+        MIN_SIZE: 4
+        SHOW: true
+        SHOW_UNIT: false
+        X: 46
+        Y: 279
+    INTERVAL: 1
+    MEMORY_PERCENT:
+      GRAPH:
+        BACKGROUND_IMAGE: background.png
+        BAR_COLOR: 255, 0, 0
+        BAR_OUTLINE: false
+        HEIGHT: 9
+        MAX_VALUE: 100
+        MIN_VALUE: 0
+        SHOW: true
+        WIDTH: 102
+        X: 349
+        Y: 48
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_COLOR: 21, 176, 231
+        FONT_SIZE: 20
+        SHOW: true
+        SHOW_UNIT: true
+        X: 295
+        Y: 46
+    PERCENTAGE:
+      RADIAL:
+        ANGLE_END: 110
+        ANGLE_SEP: 0
+        ANGLE_START: 110
+        ANGLE_STEPS: 5
+        BACKGROUND_IMAGE: background.png
+        BAR_COLOR: 255, 0, 0
+        CLOCKWISE: true
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_COLOR: 21, 176, 231
+        FONT_SIZE: 20
+        MAX_VALUE: 100
+        MIN_VALUE: 0
+        RADIUS: 51
+        SHOW: true
+        SHOW_TEXT: true
+        SHOW_UNIT: true
+        WIDTH: 25
+        X: 387
+        Y: 166
+    TEMPERATURE:
+      TEXT:
+        BACKGROUND_IMAGE: background.png
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_COLOR: 248, 177, 51
+        FONT_SIZE: 23
+        SHOW: true
+        SHOW_UNIT: true
+        X: 234
+        Y: 158
+  MEMORY:
+    INTERVAL: 5
+    VIRTUAL:
+      RADIAL:
+        ANGLE_END: 20
+        ANGLE_SEP: 25
+        ANGLE_START: 20
+        ANGLE_STEPS: 1
+        BACKGROUND_IMAGE: background.png
+        BAR_COLOR: 200, 100, 50
+        CLOCKWISE: true
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_COLOR: 248, 177, 51
+        FONT_SIZE: 13
+        MAX_VALUE: 100
+        MIN_VALUE: 0
+        RADIUS: 31
+        SHOW: true
+        SHOW_TEXT: true
+        SHOW_UNIT: true
+        WIDTH: 13
+        X: 110
+        Y: 211
+  NET:
+    ETH:
+      DOWNLOAD:
+        TEXT:
+          BACKGROUND_IMAGE: background.png
+          FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+          FONT_COLOR: 255, 255, 255
+          FONT_SIZE: 10
+          SHOW: true
+          X: 375
+          Y: 257
+      UPLOAD:
+        TEXT:
+          BACKGROUND_IMAGE: background.png
+          FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+          FONT_COLOR: 255, 255, 255
+          FONT_SIZE: 10
+          SHOW: true
+          X: 330
+          Y: 293
+    INTERVAL: 1
+author: '@hicwic'
+display:
+  DISPLAY_ORIENTATION: landscape
+  DISPLAY_RGB_LED: 255, 0, 0
+  DISPLAY_SIZE: 320x480
+static_images:
+  BACKGROUND:
+    HEIGHT: 320
+    PATH: background.png
+    WIDTH: 480
+    X: 0
+    Y: 0

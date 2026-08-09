@@ -1,0 +1,52 @@
+DISPLAY_SIZE:
+  80x160: 80x160
+  320x480: 320x480
+  480x800: 480x800
+
+DISPLAY_ORIENTATION:
+  portrait: portrait
+  landscape: landscape
+
+ALIGN: 
+  left: left
+  center: center
+  right: right
+
+ANCHOR:
+  la: la
+  lt: lt
+  lm: lm
+  ls: ls
+  lb: lb
+  ld: ld
+  ma: ma
+  mt: mt
+  mm: mm
+  ms: ms
+  mb: mb
+  md: md
+  ra: ra
+  rt: rt
+  rm: rm
+  rs: rs
+  rb: rb
+  rd: rd
+
+FORMAT: 
+  short: short
+  medium: medium
+  long: long
+  full: full
+  yyyy.MM.dd: yyyy.MM.dd
+
+BAR_DECORATION: 
+  Ellipse: Ellipse
+  Normal: ''
+
+GET_TYPE:
+  image: image
+  text: text
+
+TEMP_TYPE:
+  Core: Core
+  Package: Package

@@ -1,0 +1,35 @@
+author: '@your_GitHub_username'
+display:
+  DISPLAY_SIZE: 80x160
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 85, 85, 85
+
+static_images:
+  background:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 80
+    HEIGHT: 160
+
+static_text:
+  hello:
+    TEXT: Hello World !
+    X: 10
+    Y: 10
+    FONT: fusion-pixel\fusion-pixel-10px-monospaced-zh_hans.otf
+    FONT_SIZE: 10
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_IMAGE: background.png
+    ALIGN: left # left / center / right
+    ANCHOR: lt  # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+  hello_weact:
+    TEXT: WeAct Studio
+    X: 10
+    Y: 35
+    FONT: fusion-pixel\fusion-pixel-10px-monospaced-zh_hans.otf
+    FONT_SIZE: 10
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_IMAGE: background.png
+    ALIGN: left # left / center / right
+    ANCHOR: lt  # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html

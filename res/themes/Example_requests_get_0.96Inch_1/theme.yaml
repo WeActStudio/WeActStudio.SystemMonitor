@@ -1,0 +1,63 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_SIZE: 80x160
+  DISPLAY_ORIENTATION: landscape
+  DISPLAY_RGB_LED: 85, 85, 85
+
+static_images:
+  background:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 160
+    HEIGHT: 80
+
+static_text:
+  hello_weact:
+    TEXT: Hello WeAct Studio !
+    X: 0
+    Y: 0
+    FONT: fusion-pixel\fusion-pixel-12px-monospaced-zh_hans.otf
+    FONT_SIZE: 12
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_IMAGE: background.png
+    ALIGN: left # left / center / right
+    ANCHOR: lt  # Check https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
+requests_get:
+  SHOW: true
+  get_text_bilibili:
+    SHOW: true
+    INTERVAL_100mS: 300
+    GET_TYPE: text
+    URL: https://api.bilibili.com/x/relation/stat
+    ARGS1: vmid=23753312
+    ARGS2: ''
+    RETURN_SETTING: "关注数: {data['following']} 粉丝数:  {data['follower']}"
+    X: 0
+    Y: 12
+    WIDTH: 160
+    HEIGHT: 10
+    FONT: fusion-pixel\fusion-pixel-10px-monospaced-zh_hans.otf
+    FONT_SIZE: 10
+    FONT_COLOR: 255, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+    ALIGN: left
+    ANCHOR: lt
+    ROTATION: 0
+  get_image_random:
+    SHOW: true
+    INTERVAL_100mS: 600
+    GET_TYPE: image
+    URL: https://v2.xxapi.cn/api/wallpaper?return=302
+    ARGS1: ''
+    ARGS2: ''
+    RETURN_SETTING: ''
+    X: 0
+    Y: 24
+    WIDTH: 160
+    HEIGHT: 56
+    BACKGROUND_IMAGE: background.png
+    ALIGN: center
+    RADIUS: 0
+    ALPHA: 255

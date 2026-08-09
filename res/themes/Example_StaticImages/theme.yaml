@@ -1,0 +1,58 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 0, 0, 0
+  DISPLAY_SIZE: 320x480
+static_images:
+  '1':
+    ALPHA: 255
+    BACKGROUND_IMAGE: background.png
+    COLOR: 0, 0, 0
+    HEIGHT: 200
+    ID: 1
+    PATH: 1.png
+    RADIUS: 0
+    WIDTH: 200
+    X: 0
+    Y: 100
+  '2':
+    ALPHA: 255
+    BACKGROUND_IMAGE: background.png
+    COLOR: 0, 0, 0
+    ID: 2
+    PATH: 2.png
+    RADIUS: 0
+    WIDTH: 50
+    X: 0
+    Y: 100
+  '3':
+    ALPHA: 255
+    BACKGROUND_IMAGE: background.png
+    COLOR: 0, 0, 0
+    ID: 3
+    PATH: 3.png
+    RADIUS: 0
+    WIDTH: 50
+    X: 150
+    Y: 100
+static_text:
+  hello:
+    ALIGN: left
+    ANCHOR: lt
+    BACKGROUND_IMAGE: background.png
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    TEXT: Hello World !
+    X: 10
+    Y: 10
+  hello_weact:
+    ALIGN: left
+    ANCHOR: lt
+    BACKGROUND_IMAGE: background.png
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    TEXT: Hello WeAct Studio !
+    X: 10
+    Y: 35

@@ -1,0 +1,91 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 0, 0, 0
+  DISPLAY_SIZE: 320x480
+static_images:
+  background:
+    HEIGHT: 480
+    PATH: background.png
+    WIDTH: 320
+    X: 0
+    Y: 0
+static_text:
+  humidness:
+    ALIGN: left
+    ANCHOR: mt
+    BACKGROUND_IMAGE: background.png
+    FONT: SourceHanSansCN/SourceHanSansCN-Bold.otf
+    FONT_COLOR: 255, 128, 0
+    FONT_SIZE: 45
+    TEXT: Humidness
+    X: 160
+    Y: 260
+  temperature:
+    ALIGN: left
+    ANCHOR: mt
+    BACKGROUND_IMAGE: background.png
+    FONT: SourceHanSansCN/SourceHanSansCN-Bold.otf
+    FONT_COLOR: 128, 255, 128
+    FONT_SIZE: 45
+    TEXT: Temperature
+    X: 160
+    Y: 60
+STATS:
+  LCD_SENSOR:
+    HUMIDNESS:
+      INTERVAL: 3
+      LINE_GRAPH:
+        AUTOSCALE: true
+        AXIS: true
+        AXIS_COLOR: 255, 135, 0
+        BACKGROUND_IMAGE: background.png
+        HEIGHT: 40
+        HISTORY_SIZE: 100
+        LINE_COLOR: 242, 79, 0
+        LINE_WIDTH: 2
+        MAX_VALUE: 100
+        MIN_VALUE: 0
+        SHOW: true
+        WIDTH: 300
+        X: 10
+        Y: 440
+      TEXT:
+        ALIGN: right
+        ANCHOR: rt
+        BACKGROUND_IMAGE: background.png
+        FONT: SourceHanSansCN/SourceHanSansCN-ExtraLight.otf
+        FONT_COLOR: 255, 128, 64
+        FONT_SIZE: 140
+        SHOW: true
+        SHOW_UNIT: false
+        X: 320
+        Y: 320
+    TEMPERATURE:
+      INTERVAL: 3
+      LINE_GRAPH:
+        AUTOSCALE: true
+        AXIS: true
+        AXIS_COLOR: 0, 255, 128
+        BACKGROUND_IMAGE: background.png
+        HEIGHT: 40
+        HISTORY_SIZE: 100
+        LINE_COLOR: 0, 227, 57
+        LINE_WIDTH: 2
+        MAX_VALUE: 60
+        MIN_VALUE: -40
+        SHOW: true
+        WIDTH: 300
+        X: 10
+        Y: 2
+      TEXT:
+        ALIGN: right
+        ANCHOR: rt
+        BACKGROUND_IMAGE: background.png
+        FONT: SourceHanSansCN/SourceHanSansCN-ExtraLight.otf
+        FONT_COLOR: 128, 255, 128
+        FONT_SIZE: 140
+        SHOW: true
+        SHOW_UNIT: false
+        X: 320
+        Y: 120

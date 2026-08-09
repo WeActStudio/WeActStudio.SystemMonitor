@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-09-14 22:50+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp936\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: .\weact_device_setting.py:493 .\weact_device_setting.py:616
+msgid "Device not connected !"
+msgstr ""
+
+#: .\weact_device_setting.py:496 .\weact_device_setting.py:619
+msgid "Device connected !"
+msgstr ""
+
+#: .\weact_device_setting.py:500
+msgid "WeAct Studio Display Configuration"
+msgstr ""
+
+#: .\weact_device_setting.py:515
+msgid "Refresh"
+msgstr ""
+
+#: .\weact_device_setting.py:519
+msgid "Orientation"
+msgstr ""
+
+#: .\weact_device_setting.py:534
+msgid "Brightness"
+msgstr ""
+
+#: .\weact_device_setting.py:550
+msgid "Unconnect Orientation"
+msgstr ""
+
+#: .\weact_device_setting.py:558
+msgid "Unconnect Brightness"
+msgstr ""
+
+#: .\weact_device_setting.py:576
+msgid "Device Reset"
+msgstr ""
+
+#: .\weact_device_setting.py:588 .\weact_device_setting.py:671
+msgid "Version: "
+msgstr ""
+
+#: .\weact_device_setting.py:595 .\weact_device_setting.py:675
+msgid "Serial Num: "
+msgstr ""
+
+#: .\weact_device_setting.py:759
+msgid "Hello World !"
+msgstr ""
+
+#: .\weact_device_setting.py:760
+msgid "Hello WeAct Studio !"
+msgstr ""
+
+#: .\weact_device_setting.py:815 .\weact_device_setting.py:824
+msgid "Temperature: "
+msgstr ""
+
+#: .\weact_device_setting.py:816 .\weact_device_setting.py:825
+msgid "Humidness: "
+msgstr ""
+
+#: .\weact_device_setting.py:828
+msgid "Device Unconnected !"
+msgstr ""
+

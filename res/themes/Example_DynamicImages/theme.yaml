@@ -1,0 +1,201 @@
+author: '@WeActStudio'
+display:
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 0, 0, 0
+  DISPLAY_SIZE: 320x480
+static_images:
+  background:
+    HEIGHT: 480
+    PATH: background.png
+    WIDTH: 320
+    X: 0
+    Y: 0
+static_text:
+  dynamic_example:
+    ALIGN: left
+    ANCHOR: lt
+    BACKGROUND_IMAGE: background.png
+    FONT: GlowSansSC-Compressed/GlowSansSC-Compressed-Bold.otf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    HEIGHT: 0
+    TEXT: Dynamic Images Example
+    WIDTH: 0
+    X: 10
+    Y: 75
+  hello:
+    ALIGN: left
+    ANCHOR: lt
+    BACKGROUND_IMAGE: background.png
+    FONT: GlowSansSC-Compressed/GlowSansSC-Compressed-ExtraBold.otf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    TEXT: Hello World !
+    X: 10
+    Y: 10
+  hello_weact:
+    ALIGN: left
+    ANCHOR: lt
+    BACKGROUND_IMAGE: background.png
+    FONT: GlowSansSC-Compressed/GlowSansSC-Compressed-ExtraBold.otf
+    FONT_COLOR: 255, 255, 255
+    FONT_SIZE: 20
+    TEXT: Hello WeAct Studio !
+    X: 10
+    Y: 35
+dynamic_images:
+  BACKGROUND_COLOR: 0, 0, 0
+  BACKGROUND_IMAGE: background.png
+  SHOW: true
+  dynamic_0:
+    HEIGHT: 480
+    ID: 0
+    INTERVAL_100mS: 1
+    PATH: test/t_0.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_1:
+    HEIGHT: 480
+    ID: 1
+    INTERVAL_100mS: 1
+    PATH: test/t_1.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_10:
+    HEIGHT: 480
+    ID: 10
+    INTERVAL_100mS: 1
+    PATH: test/t_10.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_11:
+    HEIGHT: 480
+    ID: 11
+    INTERVAL_100mS: 1
+    PATH: test/t_11.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_12:
+    HEIGHT: 480
+    ID: 12
+    INTERVAL_100mS: 1
+    PATH: test/t_12.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_13:
+    HEIGHT: 480
+    ID: 13
+    INTERVAL_100mS: 1
+    PATH: test/t_13.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_14:
+    HEIGHT: 480
+    ID: 14
+    INTERVAL_100mS: 1
+    PATH: test/t_14.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_15:
+    HEIGHT: 480
+    ID: 15
+    INTERVAL_100mS: 1
+    PATH: test/t_15.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_16:
+    HEIGHT: 480
+    ID: 16
+    INTERVAL_100mS: 1
+    PATH: test/t_16.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_17:
+    HEIGHT: 480
+    ID: 17
+    INTERVAL_100mS: 1
+    PATH: test/t_17.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_18:
+    HEIGHT: 480
+    ID: 18
+    INTERVAL_100mS: 1
+    PATH: test/t_18.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_2:
+    HEIGHT: 480
+    ID: 2
+    INTERVAL_100mS: 1
+    PATH: test/t_2.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_3:
+    HEIGHT: 480
+    ID: 3
+    INTERVAL_100mS: 1
+    PATH: test/t_3.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_4:
+    HEIGHT: 480
+    ID: 4
+    INTERVAL_100mS: 1
+    PATH: test/t_4.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_5:
+    HEIGHT: 480
+    ID: 5
+    INTERVAL_100mS: 1
+    PATH: test/t_5.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_6:
+    HEIGHT: 480
+    ID: 6
+    INTERVAL_100mS: 1
+    PATH: test/t_6.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_7:
+    HEIGHT: 480
+    ID: 7
+    INTERVAL_100mS: 1
+    PATH: test/t_7.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_8:
+    HEIGHT: 480
+    ID: 8
+    INTERVAL_100mS: 1
+    PATH: test/t_8.png
+    WIDTH: 320
+    X: 0
+    Y: 100
+  dynamic_9:
+    HEIGHT: 480
+    ID: 9
+    INTERVAL_100mS: 1
+    PATH: test/t_9.png
+    WIDTH: 320
+    X: 0
+    Y: 100
